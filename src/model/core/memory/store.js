@@ -112,13 +112,22 @@ export class MemoryStore {
     });
 
     // Sort by association strength
-    return Array.from(similar.entries())
+    const similarEntries = Array.from(similar.entries())
       .sort((a, b) => b[1] - a[1])
-      .slice(0, limit)
-      .map(([k]) => this.recall(k));
+      .slice(0, limit);
+    
+    // Resolve all promises
+    const results = await Promise.all(
+      similarEntries.map(async ([k]) => {
+        const memory = await this.recall(k);
+        return { key: k, memory, strength: similar.get(k) / entry.associations.size };
+      })
+    );
+    
+    return results;
   }
 
-  private async consolidate(key) {
+  async consolidate(key) {
     const entry = this.shortTerm.get(key);
     if (!entry) return;
 
@@ -130,7 +139,7 @@ export class MemoryStore {
     }
   }
 
-  private updateLastAccess(key) {
+  updateLastAccess(key) {
     this.lastAccess.set(key, Date.now());
   }
 

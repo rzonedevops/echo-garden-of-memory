@@ -73,7 +73,7 @@ export class ContinuityManager {
     };
   }
 
-  private summarizeMemories(memories) {
+  summarizeMemories(memories) {
     // Group memories by tags
     const groups = new Map();
     
