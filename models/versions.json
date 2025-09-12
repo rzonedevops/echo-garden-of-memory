@@ -98,7 +98,57 @@
       },
       "config": {},
       "modelFile": "model_v7.json"
+    },
+    {
+      "version": 8,
+      "timestamp": "2025-09-12T08:44:15.530Z",
+      "metrics": {
+        "accuracy": 0.8,
+        "averageLoss": 0.2
+      },
+      "config": {
+        "embeddingDim": 100
+      },
+      "modelFile": "model_v8.json"
+    },
+    {
+      "version": 9,
+      "timestamp": "2025-09-12T08:44:15.541Z",
+      "metrics": {
+        "accuracy": 0.7
+      },
+      "config": {},
+      "modelFile": "model_v9.json"
+    },
+    {
+      "version": 10,
+      "timestamp": "2025-09-12T08:44:15.541Z",
+      "metrics": {
+        "accuracy": 0.8
+      },
+      "config": {},
+      "modelFile": "model_v10.json"
+    },
+    {
+      "version": 11,
+      "timestamp": "2025-09-12T08:44:15.563Z",
+      "metrics": {
+        "accuracy": 0.7,
+        "averageLoss": 0.3
+      },
+      "config": {},
+      "modelFile": "model_v11.json"
+    },
+    {
+      "version": 12,
+      "timestamp": "2025-09-12T08:44:15.563Z",
+      "metrics": {
+        "accuracy": 0.8,
+        "averageLoss": 0.2
+      },
+      "config": {},
+      "modelFile": "model_v12.json"
     }
   ],
-  "currentVersion": 7
+  "currentVersion": 12
 }
