@@ -112,6 +112,14 @@ export class MemoryOrchestrator {
 
   async linkMemories(sourceKey, targetKey, relationship) {
     try {
+      // Validate that both memories exist
+      const sourceMemory = await this.store.recall(sourceKey);
+      const targetMemory = await this.store.recall(targetKey);
+      
+      if (!sourceMemory || !targetMemory) {
+        throw new Error(`Cannot link memories: ${!sourceMemory ? sourceKey : targetKey} not found`);
+      }
+
       // Create network connection
       this.network.addEdge(sourceKey, targetKey, relationship);
 

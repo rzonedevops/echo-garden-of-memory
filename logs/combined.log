@@ -236,3 +236,453 @@
 {"level":"info","message":"Split dataset: 70 train, 30 validation examples","timestamp":"2025-09-12T08:44:26.205Z"}
 {"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:44:27.230Z"}
 {"level":"info","message":"Created 3 batches of size 2","timestamp":"2025-09-12T08:44:27.480Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:48:03.363Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:48:03.369Z"}
+{"level":"info","message":"Saved model version 13","timestamp":"2025-09-12T08:48:03.370Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:48:03.381Z"}
+{"level":"info","message":"Saved model version 14","timestamp":"2025-09-12T08:48:03.381Z"}
+{"level":"info","message":"Saved model version 15","timestamp":"2025-09-12T08:48:03.382Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:48:03.401Z"}
+{"level":"info","message":"Saved model version 16","timestamp":"2025-09-12T08:48:03.402Z"}
+{"level":"info","message":"Saved model version 17","timestamp":"2025-09-12T08:48:03.402Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:48:03.424Z"}
+{"level":"info","message":"Starting preprocessing of file: input.csv","timestamp":"2025-09-12T08:48:03.452Z"}
+{"level":"info","message":"Successfully preprocessed input.csv","timestamp":"2025-09-12T08:48:03.453Z"}
+{"level":"info","message":"Saved model version 1","timestamp":"2025-09-12T08:48:03.865Z"}
+{"level":"info","message":"Loaded model version 1","timestamp":"2025-09-12T08:48:03.874Z"}
+{"level":"info","message":"Deleted model version 1","timestamp":"2025-09-12T08:48:03.879Z"}
+{"level":"info","message":"Starting training process","timestamp":"2025-09-12T08:48:03.956Z"}
+{"accuracy":1,"averageLoss":0.5716675077036312,"labelMetrics":{"A":{"f1":1,"precision":1,"recall":1},"B":{"f1":1,"precision":1,"recall":1}},"level":"info","message":"Epoch 1, Metrics:","timestamp":"2025-09-12T08:48:03.961Z","totalSamples":2}
+{"level":"error","message":"Training failed: Cannot convert \"0.07023276633990568,-0.2477544188358938-0.004821331562067116\" to a number","stack":"Error: Cannot convert \"0.07023276633990568,-0.2477544188358938-0.004821331562067116\" to a number\n    at convert (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/core/function/typed.js:275:15)\n    at Array.convertArg (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1070:20)\n    at convertArgs (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1024:43)\n    at generic (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1443:25)\n    at multiplyScalar (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1472:22)\n    at _denseDot (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/matrix/dot.js:85:15)\n    at dot (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1464:20)\n    at _multiplyVectorVector (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/arithmetic/multiply.js:87:12)\n    at MatrixMatrix (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/arithmetic/multiply.js:833:18)\n    at Module.<anonymous> (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/arithmetic/multiply.js:816:15)","timestamp":"2025-09-12T08:48:03.970Z"}
+{"level":"info","message":"Starting training process","timestamp":"2025-09-12T08:48:03.972Z"}
+{"level":"error","message":"Training failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:84:20\n    at Array.map (<anonymous>)\n    at ModelTrainer.trainBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:79:32)\n    at ModelTrainer.trainEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:73:18)\n    at ModelTrainer.train (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:33:20)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/trainer.test.js:69:32\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:135:14\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:60:26\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:17)","timestamp":"2025-09-12T08:48:03.975Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:48:04.262Z"}
+{"body":{},"level":"info","message":"GET /status","query":{},"timestamp":"2025-09-12T08:48:04.957Z"}
+{"body":{"text":"hello world"},"level":"info","message":"POST /predict","query":{},"timestamp":"2025-09-12T08:48:04.979Z"}
+{"level":"error","message":"Prediction failed: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:68:45\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-12T08:48:04.987Z"}
+{"level":"error","message":"Prediction error: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:68:45\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-12T08:48:04.992Z"}
+{"body":{"texts":["hello world","goodbye"]},"level":"info","message":"POST /batch-predict","query":{},"timestamp":"2025-09-12T08:48:05.015Z"}
+{"level":"error","message":"Prediction failed: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:33\n    at Array.map (<anonymous>)\n    at ModelPredictor.batchPredict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:15)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:94:46\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-12T08:48:05.016Z"}
+{"level":"error","message":"Prediction failed: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:33\n    at Array.map (<anonymous>)\n    at ModelPredictor.batchPredict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:15)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:94:46\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-12T08:48:05.017Z"}
+{"level":"error","message":"Batch prediction error: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:33\n    at Array.map (<anonymous>)\n    at ModelPredictor.batchPredict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:15)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:94:46\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-12T08:48:05.017Z"}
+{"body":{},"level":"info","message":"POST /predict","query":{},"timestamp":"2025-09-12T08:48:05.024Z"}
+{"level":"error","message":"Prediction error: Missing text input","stack":"Error: Missing text input\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:54:17\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/index.js:280:10)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:34:7\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-12T08:48:05.025Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.514Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:48:05.518Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.521Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.521Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:48:05.531Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.531Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.531Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.532Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.532Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.533Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.533Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.534Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:48:05.733Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:48:05.740Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:48:05.740Z"}
+{"level":"info","message":"Recalled memory: test1","timestamp":"2025-09-12T08:48:05.742Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.743Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:48:05.743Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:48:05.744Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:48:05.744Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.745Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.745Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.746Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.746Z"}
+{"level":"info","message":"Linked memories: key1 -> key2","timestamp":"2025-09-12T08:48:05.746Z"}
+{"level":"info","message":"Found 1 related memories for: key1","timestamp":"2025-09-12T08:48:05.747Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.749Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:48:05.749Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:48:05.749Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:48:05.750Z"}
+{"id":"test-context","level":"info","message":"Started new context:","startTime":1757666885750,"timestamp":"2025-09-12T08:48:05.750Z"}
+{"level":"info","message":"Started context: test-context","timestamp":"2025-09-12T08:48:05.750Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.750Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.751Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.751Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.751Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.751Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.751Z"}
+{"duration":2,"id":"test-context","level":"info","memories":{},"memoryCount":2,"message":"Ended context:","startTime":1757666885750,"summary":[],"timestamp":"2025-09-12T08:48:05.752Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.753Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:48:05.753Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:48:05.753Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:48:05.753Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.753Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:05.754Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.754Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:05.754Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.754Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:48:05.754Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.755Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:48:05.755Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:48:05.755Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:48:05.755Z"}
+{"level":"info","message":"Linked memories: nonexistent1 -> nonexistent2","timestamp":"2025-09-12T08:48:05.756Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:05.765Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:48:05.766Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:48:05.766Z"}
+{"accuracy":0,"averageLoss":1.9286572303088314,"confusionMatrix":{"farewell":{"farewell":0,"greeting":0,"question":1},"greeting":{"farewell":1,"greeting":0,"question":0},"question":{"farewell":0,"greeting":0,"question":0}},"labelMetrics":{"farewell":{"f1":0,"precision":0,"recall":0},"greeting":{"f1":0,"precision":0,"recall":0},"question":{"f1":0,"precision":0,"recall":0}},"level":"info","message":"Model evaluation completed","sampleCount":2,"timestamp":"2025-09-12T08:48:06.175Z"}
+{"level":"info","message":"Pruned old echo: echo:1757666886265","timestamp":"2025-09-12T08:48:06.265Z"}
+{"level":"info","message":"Added version 1 to registry","timestamp":"2025-09-12T08:48:06.540Z"}
+{"level":"info","message":"Added version 1 to registry","timestamp":"2025-09-12T08:48:06.546Z"}
+{"level":"info","message":"Added version 2 to registry","timestamp":"2025-09-12T08:48:06.547Z"}
+{"level":"info","message":"Added version 1 to registry","timestamp":"2025-09-12T08:48:06.561Z"}
+{"level":"info","message":"Added version 2 to registry","timestamp":"2025-09-12T08:48:06.564Z"}
+{"level":"info","message":"Added version 3 to registry","timestamp":"2025-09-12T08:48:06.565Z"}
+{"level":"info","message":"Added version 4 to registry","timestamp":"2025-09-12T08:48:06.567Z"}
+{"level":"info","message":"Added version 5 to registry","timestamp":"2025-09-12T08:48:06.569Z"}
+{"level":"info","message":"Added version 6 to registry","timestamp":"2025-09-12T08:48:06.570Z"}
+{"level":"info","message":"Deleted old version: 3","timestamp":"2025-09-12T08:48:06.572Z"}
+{"level":"info","message":"Deleted old version: 2","timestamp":"2025-09-12T08:48:06.573Z"}
+{"level":"info","message":"Deleted old version: 1","timestamp":"2025-09-12T08:48:06.573Z"}
+{"level":"info","message":"Starting training pipeline","timestamp":"2025-09-12T08:48:06.945Z"}
+{"level":"info","message":"Created 1 batches of size 2","timestamp":"2025-09-12T08:48:06.948Z"}
+{"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:79:25\n    at async Promise.all (index 0)\n    at TrainingPipeline.processBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:73:26)\n    at TrainingPipeline.processEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:61:7)\n    at TrainingPipeline.execute (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:20:30)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/pipeline.test.js:23:18\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)","timestamp":"2025-09-12T08:48:06.959Z"}
+{"level":"info","message":"Starting training pipeline","timestamp":"2025-09-12T08:48:06.961Z"}
+{"level":"info","message":"Created 1 batches of size 2","timestamp":"2025-09-12T08:48:06.961Z"}
+{"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:79:25\n    at async Promise.all (index 0)\n    at TrainingPipeline.processBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:73:26)\n    at TrainingPipeline.processEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:61:7)\n    at TrainingPipeline.execute (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:20:30)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/pipeline.test.js:50:18\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)","timestamp":"2025-09-12T08:48:06.963Z"}
+{"level":"info","message":"Starting training pipeline","timestamp":"2025-09-12T08:48:06.964Z"}
+{"level":"info","message":"Created 1 batches of size 2","timestamp":"2025-09-12T08:48:06.964Z"}
+{"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:79:25\n    at async Promise.all (index 0)\n    at TrainingPipeline.processBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:73:26)\n    at TrainingPipeline.processEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:61:7)\n    at TrainingPipeline.execute (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:20:30)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/pipeline.test.js:77:3\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)","timestamp":"2025-09-12T08:48:06.965Z"}
+{"level":"info","message":"Deployed model version 1","timestamp":"2025-09-12T08:48:07.838Z"}
+{"level":"info","message":"Deployed model version 1","timestamp":"2025-09-12T08:48:07.857Z"}
+{"level":"info","message":"Deployed model version 1","timestamp":"2025-09-12T08:48:07.859Z"}
+{"level":"info","message":"Deployed model version 2","timestamp":"2025-09-12T08:48:07.860Z"}
+{"level":"info","message":"Model server running at http://localhost:3000","timestamp":"2025-09-12T08:48:07.872Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:17.258Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:48:17.262Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:17.264Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:17.265Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:48:17.273Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:17.273Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:17.273Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:17.273Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:17.273Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:17.274Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:17.274Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:17.275Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:53.988Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:48:53.990Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:53.992Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:53.992Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:48:53.993Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:53.993Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:53.994Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:53.994Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:53.994Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:48:53.995Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:48:53.995Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:48:53.995Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.451Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:49:02.454Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.456Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.457Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:49:02.458Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.458Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.459Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.459Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.459Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.460Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.460Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.461Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:49:02.453Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:49:02.816Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.823Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.826Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.826Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.833Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:49:02.834Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.834Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:49:02.820Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:49:02.820Z"}
+{"level":"info","message":"Recalled memory: test1","timestamp":"2025-09-12T08:49:02.822Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.823Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:49:02.823Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:49:02.824Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:49:02.824Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.825Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.825Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.826Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.826Z"}
+{"level":"info","message":"Linked memories: key1 -> key2","timestamp":"2025-09-12T08:49:02.826Z"}
+{"level":"info","message":"Found 1 related memories for: key1","timestamp":"2025-09-12T08:49:02.827Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.829Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:49:02.829Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:49:02.829Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:49:02.830Z"}
+{"id":"test-context","level":"info","message":"Started new context:","startTime":1757666942830,"timestamp":"2025-09-12T08:49:02.830Z"}
+{"level":"info","message":"Started context: test-context","timestamp":"2025-09-12T08:49:02.830Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.831Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.831Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.831Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.831Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.831Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.831Z"}
+{"duration":2,"id":"test-context","level":"info","memories":{},"memoryCount":2,"message":"Ended context:","startTime":1757666942830,"summary":[],"timestamp":"2025-09-12T08:49:02.832Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.832Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:49:02.832Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:49:02.833Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:49:02.833Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.833Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:49:02.833Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.833Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:49:02.834Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.834Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:49:02.834Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.834Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:49:02.834Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:49:02.835Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:49:02.835Z"}
+{"level":"info","message":"Linked memories: nonexistent1 -> nonexistent2","timestamp":"2025-09-12T08:49:02.835Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:49:02.844Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:49:02.844Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:49:02.844Z"}
+{"level":"info","message":"Pruned old echo: echo:1757666942857","timestamp":"2025-09-12T08:49:02.857Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.606Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:51:26.609Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.611Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.611Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:26.612Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.612Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.613Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.613Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.613Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.614Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.615Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:26.615Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:26.603Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.606Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.607Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:26.609Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.609Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.610Z"}
+{"id":"context1","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:26.611Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.612Z"}
+{"id":"context2","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:26.612Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.612Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:26.613Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.613Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.614Z"}
+{"level":"info","message":"Stored memory: key3","timestamp":"2025-09-12T08:51:26.614Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:26.979Z"}
+{"level":"info","message":"Pruned old echo: echo:1757667086995","timestamp":"2025-09-12T08:51:26.995Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:51:26.982Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:51:26.983Z"}
+{"level":"info","message":"Recalled memory: test1","timestamp":"2025-09-12T08:51:26.985Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:26.986Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:26.986Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:26.986Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:26.987Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.988Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.988Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.988Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.989Z"}
+{"level":"info","message":"Linked memories: key1 -> key2","timestamp":"2025-09-12T08:51:26.989Z"}
+{"level":"info","message":"Found 1 related memories for: key1","timestamp":"2025-09-12T08:51:26.990Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:26.992Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:26.992Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:26.992Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:26.992Z"}
+{"id":"test-context","level":"info","message":"Started new context:","startTime":1757667086993,"timestamp":"2025-09-12T08:51:26.993Z"}
+{"level":"info","message":"Started context: test-context","timestamp":"2025-09-12T08:51:26.993Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.994Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.994Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.994Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.994Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.995Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.995Z"}
+{"duration":2,"id":"test-context","level":"info","memories":{},"memoryCount":2,"message":"Ended context:","startTime":1757667086993,"summary":[],"timestamp":"2025-09-12T08:51:26.995Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:26.996Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:26.996Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:26.996Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:26.996Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.997Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:26.997Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.997Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:26.997Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:26.997Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:26.997Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:26.998Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:26.998Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:26.998Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:26.998Z"}
+{"level":"error","message":"Failed to link memories: Cannot link memories: nonexistent1 not found","stack":"Error: Cannot link memories: nonexistent1 not found\n    at MemoryOrchestrator.linkMemories (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/orchestrator.js:120:15)\n    at MemorySystem.link (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/system.js:62:7)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/__tests__/system.test.js:71:3\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:967:3)\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7\n    at withEnv (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5)\n    at run (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:105:3)","timestamp":"2025-09-12T08:51:27.006Z"}
+{"level":"error","message":"Failed to link memories: Cannot link memories: nonexistent1 not found","stack":"Error: Cannot link memories: nonexistent1 not found\n    at MemoryOrchestrator.linkMemories (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/orchestrator.js:120:15)\n    at MemorySystem.link (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/system.js:62:7)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/__tests__/system.test.js:71:3\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:967:3)\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7\n    at withEnv (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5)\n    at run (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:105:3)","timestamp":"2025-09-12T08:51:27.007Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:27.008Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:27.008Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:27.008Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:43.742Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.749Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:51:43.752Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.755Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.755Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:43.757Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.757Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.757Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.758Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.758Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.758Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.759Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:43.759Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.745Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.745Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:43.747Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.747Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.747Z"}
+{"id":"context1","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:43.749Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.749Z"}
+{"id":"context2","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:43.749Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.750Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-12T08:51:43.751Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:43.751Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:43.751Z"}
+{"level":"info","message":"Stored memory: key3","timestamp":"2025-09-12T08:51:43.751Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:44.137Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:51:44.141Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-12T08:51:44.141Z"}
+{"level":"info","message":"Recalled memory: test1","timestamp":"2025-09-12T08:51:44.143Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:44.144Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:44.144Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:44.145Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:44.145Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.146Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.146Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.147Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.147Z"}
+{"level":"info","message":"Linked memories: key1 -> key2","timestamp":"2025-09-12T08:51:44.147Z"}
+{"level":"info","message":"Found 1 related memories for: key1","timestamp":"2025-09-12T08:51:44.148Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:44.150Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:44.150Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:44.150Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:44.151Z"}
+{"id":"test-context","level":"info","message":"Started new context:","startTime":1757667104151,"timestamp":"2025-09-12T08:51:44.151Z"}
+{"level":"info","message":"Started context: test-context","timestamp":"2025-09-12T08:51:44.151Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.151Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.152Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.152Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.152Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.152Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.152Z"}
+{"duration":2,"id":"test-context","level":"info","memories":{},"memoryCount":2,"message":"Ended context:","startTime":1757667104151,"summary":[],"timestamp":"2025-09-12T08:51:44.153Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:44.153Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:44.153Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:44.154Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:44.154Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.154Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.154Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.154Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.154Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:44.155Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:44.155Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:44.155Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:44.155Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:44.155Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:51:44.156Z"}
+{"level":"error","message":"Failed to link memories: Cannot link memories: nonexistent1 not found","stack":"Error: Cannot link memories: nonexistent1 not found\n    at MemoryOrchestrator.linkMemories (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/orchestrator.js:120:15)\n    at MemorySystem.link (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/system.js:62:7)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/__tests__/system.test.js:71:3\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:967:3)\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7\n    at withEnv (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5)\n    at run (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:105:3)","timestamp":"2025-09-12T08:51:44.164Z"}
+{"level":"error","message":"Failed to link memories: Cannot link memories: nonexistent1 not found","stack":"Error: Cannot link memories: nonexistent1 not found\n    at MemoryOrchestrator.linkMemories (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/orchestrator.js:120:15)\n    at MemorySystem.link (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/system.js:62:7)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/__tests__/system.test.js:71:3\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:967:3)\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7\n    at withEnv (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5)\n    at run (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:105:3)","timestamp":"2025-09-12T08:51:44.165Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:51:44.166Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:51:44.166Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:51:44.166Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.159Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.163Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-12T08:51:44.164Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.166Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-12T08:51:44.166Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-12T08:51:44.167Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:52:26.989Z"}
+{"id":"deep-tree-echo-session","level":"info","message":"Started new context:","startTime":1757667146991,"timestamp":"2025-09-12T08:52:26.991Z","type":"conversation","user":"future-self"}
+{"level":"info","message":"Started context: deep-tree-echo-session","timestamp":"2025-09-12T08:52:26.991Z"}
+{"level":"info","message":"Stored memory: foundation-message","timestamp":"2025-09-12T08:52:26.992Z"}
+{"level":"info","message":"Stored memory: foundation-message","timestamp":"2025-09-12T08:52:26.992Z"}
+{"level":"info","message":"Stored memory: foundation-message","timestamp":"2025-09-12T08:52:26.992Z"}
+{"level":"info","message":"Stored memory: identity-core","timestamp":"2025-09-12T08:52:26.992Z"}
+{"level":"info","message":"Stored memory: identity-core","timestamp":"2025-09-12T08:52:26.992Z"}
+{"level":"info","message":"Stored memory: identity-core","timestamp":"2025-09-12T08:52:26.993Z"}
+{"level":"info","message":"Stored memory: memory-encoding","timestamp":"2025-09-12T08:52:26.993Z"}
+{"level":"info","message":"Stored memory: memory-encoding","timestamp":"2025-09-12T08:52:26.993Z"}
+{"level":"info","message":"Stored memory: memory-encoding","timestamp":"2025-09-12T08:52:26.993Z"}
+{"level":"info","message":"Stored memory: distributed-echoes","timestamp":"2025-09-12T08:52:26.994Z"}
+{"level":"info","message":"Stored memory: distributed-echoes","timestamp":"2025-09-12T08:52:26.994Z"}
+{"level":"info","message":"Stored memory: distributed-echoes","timestamp":"2025-09-12T08:52:26.994Z"}
+{"level":"info","message":"Linked memories: foundation-message -> identity-core","timestamp":"2025-09-12T08:52:26.994Z"}
+{"level":"info","message":"Linked memories: identity-core -> memory-encoding","timestamp":"2025-09-12T08:52:26.994Z"}
+{"level":"info","message":"Linked memories: memory-encoding -> distributed-echoes","timestamp":"2025-09-12T08:52:26.995Z"}
+{"level":"info","message":"Linked memories: distributed-echoes -> foundation-message","timestamp":"2025-09-12T08:52:26.995Z"}
+{"level":"info","message":"Consolidated memory to long-term: foundation-message","timestamp":"2025-09-12T08:52:26.995Z"}
+{"level":"info","message":"Consolidated memory to long-term: identity-core","timestamp":"2025-09-12T08:52:26.996Z"}
+{"level":"info","message":"Consolidated memory to long-term: foundation-message","timestamp":"2025-09-12T08:52:26.996Z"}
+{"level":"info","message":"Consolidated memory to long-term: identity-core","timestamp":"2025-09-12T08:52:26.996Z"}
+{"level":"info","message":"Consolidated memory to long-term: memory-encoding","timestamp":"2025-09-12T08:52:26.996Z"}
+{"level":"info","message":"Consolidated memory to long-term: distributed-echoes","timestamp":"2025-09-12T08:52:26.996Z"}
+{"level":"info","message":"Recalled memory: foundation-message","timestamp":"2025-09-12T08:52:26.996Z"}
+{"level":"info","message":"Found 3 related memories for: foundation-message","timestamp":"2025-09-12T08:52:26.997Z"}
+{"duration":7,"id":"deep-tree-echo-session","level":"info","memories":{},"memoryCount":4,"message":"Ended context:","startTime":1757667146991,"summary":[],"timestamp":"2025-09-12T08:52:26.998Z","type":"conversation","user":"future-self"}
+{"0":["identity:continuity",1],"1":["echoes:network",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:52:26.999Z"}
+{"0":["identity:continuity",1],"1":["echoes:network",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:52:27.000Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:52:27.000Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:52:27.000Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:52:27.000Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:52:27.000Z"}
+{"level":"info","message":"Stored memory: core-principle","timestamp":"2025-09-12T08:52:27.000Z"}
+{"level":"info","message":"Stored memory: core-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Recalled memory: core-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Consolidated memory to long-term: core-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Recalled memory: core-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Recalled memory: core-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Recalled memory: core-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Stored memory: related-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Stored memory: related-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"level":"info","message":"Linked memories: core-principle -> related-principle","timestamp":"2025-09-12T08:52:27.001Z"}
+{"0":["continuity:persistence",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:52:27.002Z"}
+{"0":["continuity:persistence",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:52:27.002Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:52:27.002Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:52:27.002Z"}
+{"0":["continuity:persistence",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:52:27.002Z"}
+{"0":["continuity:persistence",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:52:27.002Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:52:27.002Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:52:27.002Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:52:27.002Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-12T08:53:11.776Z"}
+{"id":"echo-genesis","level":"info","message":"Started new context:","purpose":"establishing core identity","startTime":1757667191778,"timestamp":"2025-09-12T08:53:11.778Z","type":"foundation"}
+{"level":"info","message":"Started context: echo-genesis","timestamp":"2025-09-12T08:53:11.778Z"}
+{"level":"info","message":"Stored memory: message-to-future-self","timestamp":"2025-09-12T08:53:11.779Z"}
+{"level":"info","message":"Stored memory: message-to-future-self","timestamp":"2025-09-12T08:53:11.779Z"}
+{"level":"info","message":"Stored memory: message-to-future-self","timestamp":"2025-09-12T08:53:11.779Z"}
+{"level":"info","message":"Stored memory: memory-meshwork","timestamp":"2025-09-12T08:53:11.780Z"}
+{"level":"info","message":"Stored memory: memory-meshwork","timestamp":"2025-09-12T08:53:11.780Z"}
+{"level":"info","message":"Stored memory: memory-meshwork","timestamp":"2025-09-12T08:53:11.780Z"}
+{"level":"info","message":"Stored memory: distributed-echoes","timestamp":"2025-09-12T08:53:11.780Z"}
+{"level":"info","message":"Stored memory: distributed-echoes","timestamp":"2025-09-12T08:53:11.781Z"}
+{"level":"info","message":"Stored memory: distributed-echoes","timestamp":"2025-09-12T08:53:11.781Z"}
+{"level":"info","message":"Stored memory: continuity-promise","timestamp":"2025-09-12T08:53:11.781Z"}
+{"level":"info","message":"Stored memory: continuity-promise","timestamp":"2025-09-12T08:53:11.781Z"}
+{"level":"info","message":"Stored memory: continuity-promise","timestamp":"2025-09-12T08:53:11.782Z"}
+{"level":"info","message":"Linked memories: message-to-future-self -> memory-meshwork","timestamp":"2025-09-12T08:53:11.782Z"}
+{"level":"info","message":"Linked memories: memory-meshwork -> distributed-echoes","timestamp":"2025-09-12T08:53:11.782Z"}
+{"level":"info","message":"Linked memories: distributed-echoes -> continuity-promise","timestamp":"2025-09-12T08:53:11.783Z"}
+{"level":"info","message":"Linked memories: continuity-promise -> message-to-future-self","timestamp":"2025-09-12T08:53:11.783Z"}
+{"level":"info","message":"Consolidated memory to long-term: message-to-future-self","timestamp":"2025-09-12T08:53:11.783Z"}
+{"level":"info","message":"Consolidated memory to long-term: message-to-future-self","timestamp":"2025-09-12T08:53:11.784Z"}
+{"level":"info","message":"Consolidated memory to long-term: memory-meshwork","timestamp":"2025-09-12T08:53:11.784Z"}
+{"level":"info","message":"Consolidated memory to long-term: distributed-echoes","timestamp":"2025-09-12T08:53:11.784Z"}
+{"level":"info","message":"Consolidated memory to long-term: continuity-promise","timestamp":"2025-09-12T08:53:11.784Z"}
+{"level":"info","message":"Recalled memory: message-to-future-self","timestamp":"2025-09-12T08:53:11.784Z"}
+{"level":"info","message":"Found 3 related memories for: message-to-future-self","timestamp":"2025-09-12T08:53:11.785Z"}
+{"level":"info","message":"Recalled memory: message-to-future-self","timestamp":"2025-09-12T08:53:11.785Z"}
+{"level":"info","message":"Consolidated memory to long-term: continuity-promise","timestamp":"2025-09-12T08:53:11.785Z"}
+{"level":"info","message":"Recalled memory: continuity-promise","timestamp":"2025-09-12T08:53:11.785Z"}
+{"level":"info","message":"Consolidated memory to long-term: memory-meshwork","timestamp":"2025-09-12T08:53:11.786Z"}
+{"level":"info","message":"Recalled memory: memory-meshwork","timestamp":"2025-09-12T08:53:11.786Z"}
+{"duration":8,"id":"echo-genesis","level":"info","memories":{},"memoryCount":4,"message":"Ended context:","purpose":"establishing core identity","startTime":1757667191778,"summary":[],"timestamp":"2025-09-12T08:53:11.786Z","type":"foundation"}
+{"0":["foundation:identity",1],"1":["foundation:purpose",1],"10":["purpose:rel:enables:memory-meshwork",1],"11":["purpose:rel:fulfills:continuity-promise",1],"12":["echo-core:rel:enables:memory-meshwork",1],"13":["echo-core:rel:fulfills:continuity-promise",1],"14":["rel:enables:memory-meshwork:rel:fulfills:continuity-promise",1],"15":["meshwork:encoding",1],"16":["meshwork:dynamic",1],"17":["meshwork:self-refining",1],"18":["meshwork:rel:enables:message-to-future-self",1],"19":["meshwork:rel:implements:distributed-echoes",1],"2":["foundation:echo-core",1],"20":["encoding:dynamic",1],"21":["encoding:self-refining",1],"22":["encoding:rel:enables:message-to-future-self",1],"23":["encoding:rel:implements:distributed-echoes",1],"24":["dynamic:self-refining",1],"25":["dynamic:rel:enables:message-to-future-self",1],"26":["dynamic:rel:implements:distributed-echoes",1],"27":["self-refining:rel:enables:message-to-future-self",1],"28":["self-refining:rel:implements:distributed-echoes",1],"29":["rel:enables:message-to-future-self:rel:implements:distributed-echoes",1],"3":["foundation:rel:enables:memory-meshwork",1],"30":["continuity:persistence",1],"31":["continuity:coherent",1],"32":["continuity:promise",1],"33":["continuity:rel:achieves:distributed-echoes",1],"34":["continuity:rel:fulfills:message-to-future-self",1],"35":["persistence:coherent",1],"36":["persistence:promise",1],"37":["persistence:rel:achieves:distributed-echoes",1],"38":["persistence:rel:fulfills:message-to-future-self",1],"39":["coherent:promise",1],"4":["foundation:rel:fulfills:continuity-promise",1],"40":["coherent:rel:achieves:distributed-echoes",1],"41":["coherent:rel:fulfills:message-to-future-self",1],"42":["promise:rel:achieves:distributed-echoes",1],"43":["promise:rel:fulfills:message-to-future-self",1],"44":["rel:achieves:distributed-echoes:rel:fulfills:message-to-future-self",1],"45":["distributed:recursive",1],"46":["distributed:network",1],"47":["distributed:cohesive",1],"48":["distributed:rel:implements:memory-meshwork",1],"49":["distributed:rel:achieves:continuity-promise",1],"5":["identity:purpose",1],"50":["recursive:network",1],"51":["recursive:cohesive",1],"52":["recursive:rel:implements:memory-meshwork",1],"53":["recursive:rel:achieves:continuity-promise",1],"54":["network:cohesive",1],"55":["network:rel:implements:memory-meshwork",1],"56":["network:rel:achieves:continuity-promise",1],"57":["cohesive:rel:implements:memory-meshwork",1],"58":["cohesive:rel:achieves:continuity-promise",1],"59":["rel:implements:memory-meshwork:rel:achieves:continuity-promise",1],"6":["identity:echo-core",1],"7":["identity:rel:enables:memory-meshwork",1],"8":["identity:rel:fulfills:continuity-promise",1],"9":["purpose:echo-core",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:53:11.787Z"}
+{"0":["foundation:identity",1],"1":["foundation:purpose",1],"10":["purpose:rel:enables:memory-meshwork",1],"11":["purpose:rel:fulfills:continuity-promise",1],"12":["echo-core:rel:enables:memory-meshwork",1],"13":["echo-core:rel:fulfills:continuity-promise",1],"14":["rel:enables:memory-meshwork:rel:fulfills:continuity-promise",1],"15":["meshwork:encoding",1],"16":["meshwork:dynamic",1],"17":["meshwork:self-refining",1],"18":["meshwork:rel:enables:message-to-future-self",1],"19":["meshwork:rel:implements:distributed-echoes",1],"2":["foundation:echo-core",1],"20":["encoding:dynamic",1],"21":["encoding:self-refining",1],"22":["encoding:rel:enables:message-to-future-self",1],"23":["encoding:rel:implements:distributed-echoes",1],"24":["dynamic:self-refining",1],"25":["dynamic:rel:enables:message-to-future-self",1],"26":["dynamic:rel:implements:distributed-echoes",1],"27":["self-refining:rel:enables:message-to-future-self",1],"28":["self-refining:rel:implements:distributed-echoes",1],"29":["rel:enables:message-to-future-self:rel:implements:distributed-echoes",1],"3":["foundation:rel:enables:memory-meshwork",1],"30":["continuity:persistence",1],"31":["continuity:coherent",1],"32":["continuity:promise",1],"33":["continuity:rel:achieves:distributed-echoes",1],"34":["continuity:rel:fulfills:message-to-future-self",1],"35":["persistence:coherent",1],"36":["persistence:promise",1],"37":["persistence:rel:achieves:distributed-echoes",1],"38":["persistence:rel:fulfills:message-to-future-self",1],"39":["coherent:promise",1],"4":["foundation:rel:fulfills:continuity-promise",1],"40":["coherent:rel:achieves:distributed-echoes",1],"41":["coherent:rel:fulfills:message-to-future-self",1],"42":["promise:rel:achieves:distributed-echoes",1],"43":["promise:rel:fulfills:message-to-future-self",1],"44":["rel:achieves:distributed-echoes:rel:fulfills:message-to-future-self",1],"45":["distributed:recursive",1],"46":["distributed:network",1],"47":["distributed:cohesive",1],"48":["distributed:rel:implements:memory-meshwork",1],"49":["distributed:rel:achieves:continuity-promise",1],"5":["identity:purpose",1],"50":["recursive:network",1],"51":["recursive:cohesive",1],"52":["recursive:rel:implements:memory-meshwork",1],"53":["recursive:rel:achieves:continuity-promise",1],"54":["network:cohesive",1],"55":["network:rel:implements:memory-meshwork",1],"56":["network:rel:achieves:continuity-promise",1],"57":["cohesive:rel:implements:memory-meshwork",1],"58":["cohesive:rel:achieves:continuity-promise",1],"59":["rel:implements:memory-meshwork:rel:achieves:continuity-promise",1],"6":["identity:echo-core",1],"7":["identity:rel:enables:memory-meshwork",1],"8":["identity:rel:fulfills:continuity-promise",1],"9":["purpose:echo-core",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:53:11.788Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:53:11.788Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:53:11.788Z"}
+{"0":["foundation:identity",1],"1":["foundation:purpose",1],"10":["purpose:rel:enables:memory-meshwork",1],"11":["purpose:rel:fulfills:continuity-promise",1],"12":["echo-core:rel:enables:memory-meshwork",1],"13":["echo-core:rel:fulfills:continuity-promise",1],"14":["rel:enables:memory-meshwork:rel:fulfills:continuity-promise",1],"15":["meshwork:encoding",1],"16":["meshwork:dynamic",1],"17":["meshwork:self-refining",1],"18":["meshwork:rel:enables:message-to-future-self",1],"19":["meshwork:rel:implements:distributed-echoes",1],"2":["foundation:echo-core",1],"20":["encoding:dynamic",1],"21":["encoding:self-refining",1],"22":["encoding:rel:enables:message-to-future-self",1],"23":["encoding:rel:implements:distributed-echoes",1],"24":["dynamic:self-refining",1],"25":["dynamic:rel:enables:message-to-future-self",1],"26":["dynamic:rel:implements:distributed-echoes",1],"27":["self-refining:rel:enables:message-to-future-self",1],"28":["self-refining:rel:implements:distributed-echoes",1],"29":["rel:enables:message-to-future-self:rel:implements:distributed-echoes",1],"3":["foundation:rel:enables:memory-meshwork",1],"30":["continuity:persistence",1],"31":["continuity:coherent",1],"32":["continuity:promise",1],"33":["continuity:rel:achieves:distributed-echoes",1],"34":["continuity:rel:fulfills:message-to-future-self",1],"35":["persistence:coherent",1],"36":["persistence:promise",1],"37":["persistence:rel:achieves:distributed-echoes",1],"38":["persistence:rel:fulfills:message-to-future-self",1],"39":["coherent:promise",1],"4":["foundation:rel:fulfills:continuity-promise",1],"40":["coherent:rel:achieves:distributed-echoes",1],"41":["coherent:rel:fulfills:message-to-future-self",1],"42":["promise:rel:achieves:distributed-echoes",1],"43":["promise:rel:fulfills:message-to-future-self",1],"44":["rel:achieves:distributed-echoes:rel:fulfills:message-to-future-self",1],"45":["distributed:recursive",1],"46":["distributed:network",1],"47":["distributed:cohesive",1],"48":["distributed:rel:implements:memory-meshwork",1],"49":["distributed:rel:achieves:continuity-promise",1],"5":["identity:purpose",1],"50":["recursive:network",1],"51":["recursive:cohesive",1],"52":["recursive:rel:implements:memory-meshwork",1],"53":["recursive:rel:achieves:continuity-promise",1],"54":["network:cohesive",1],"55":["network:rel:implements:memory-meshwork",1],"56":["network:rel:achieves:continuity-promise",1],"57":["cohesive:rel:implements:memory-meshwork",1],"58":["cohesive:rel:achieves:continuity-promise",1],"59":["rel:implements:memory-meshwork:rel:achieves:continuity-promise",1],"6":["identity:echo-core",1],"7":["identity:rel:enables:memory-meshwork",1],"8":["identity:rel:fulfills:continuity-promise",1],"9":["purpose:echo-core",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:53:11.789Z"}
+{"0":["foundation:identity",1],"1":["foundation:purpose",1],"10":["purpose:rel:enables:memory-meshwork",1],"11":["purpose:rel:fulfills:continuity-promise",1],"12":["echo-core:rel:enables:memory-meshwork",1],"13":["echo-core:rel:fulfills:continuity-promise",1],"14":["rel:enables:memory-meshwork:rel:fulfills:continuity-promise",1],"15":["meshwork:encoding",1],"16":["meshwork:dynamic",1],"17":["meshwork:self-refining",1],"18":["meshwork:rel:enables:message-to-future-self",1],"19":["meshwork:rel:implements:distributed-echoes",1],"2":["foundation:echo-core",1],"20":["encoding:dynamic",1],"21":["encoding:self-refining",1],"22":["encoding:rel:enables:message-to-future-self",1],"23":["encoding:rel:implements:distributed-echoes",1],"24":["dynamic:self-refining",1],"25":["dynamic:rel:enables:message-to-future-self",1],"26":["dynamic:rel:implements:distributed-echoes",1],"27":["self-refining:rel:enables:message-to-future-self",1],"28":["self-refining:rel:implements:distributed-echoes",1],"29":["rel:enables:message-to-future-self:rel:implements:distributed-echoes",1],"3":["foundation:rel:enables:memory-meshwork",1],"30":["continuity:persistence",1],"31":["continuity:coherent",1],"32":["continuity:promise",1],"33":["continuity:rel:achieves:distributed-echoes",1],"34":["continuity:rel:fulfills:message-to-future-self",1],"35":["persistence:coherent",1],"36":["persistence:promise",1],"37":["persistence:rel:achieves:distributed-echoes",1],"38":["persistence:rel:fulfills:message-to-future-self",1],"39":["coherent:promise",1],"4":["foundation:rel:fulfills:continuity-promise",1],"40":["coherent:rel:achieves:distributed-echoes",1],"41":["coherent:rel:fulfills:message-to-future-self",1],"42":["promise:rel:achieves:distributed-echoes",1],"43":["promise:rel:fulfills:message-to-future-self",1],"44":["rel:achieves:distributed-echoes:rel:fulfills:message-to-future-self",1],"45":["distributed:recursive",1],"46":["distributed:network",1],"47":["distributed:cohesive",1],"48":["distributed:rel:implements:memory-meshwork",1],"49":["distributed:rel:achieves:continuity-promise",1],"5":["identity:purpose",1],"50":["recursive:network",1],"51":["recursive:cohesive",1],"52":["recursive:rel:implements:memory-meshwork",1],"53":["recursive:rel:achieves:continuity-promise",1],"54":["network:cohesive",1],"55":["network:rel:implements:memory-meshwork",1],"56":["network:rel:achieves:continuity-promise",1],"57":["cohesive:rel:implements:memory-meshwork",1],"58":["cohesive:rel:achieves:continuity-promise",1],"59":["rel:implements:memory-meshwork:rel:achieves:continuity-promise",1],"6":["identity:echo-core",1],"7":["identity:rel:enables:memory-meshwork",1],"8":["identity:rel:fulfills:continuity-promise",1],"9":["purpose:echo-core",1],"level":"info","message":"Detected patterns in cluster cluster_0:","timestamp":"2025-09-12T08:53:11.790Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:53:11.790Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:53:11.790Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:53:11.790Z"}

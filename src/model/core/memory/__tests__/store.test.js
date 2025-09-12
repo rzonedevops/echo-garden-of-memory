@@ -23,7 +23,7 @@ test('MemoryStore should build associations', async () => {
   
   const similar = await store.findSimilar('key1');
   expect(similar).toHaveLength(1);
-  expect(similar[0].content.text).toBe('memory 2');
+  expect(similar[0].memory.content.text).toBe('memory 2');
 });
 
 test('MemoryStore should consolidate frequently accessed memories', async () => {
