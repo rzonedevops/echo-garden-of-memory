@@ -118,7 +118,7 @@ export class MemoryStore {
       .map(([k]) => this.recall(k));
   }
 
-  private async consolidate(key) {
+  async consolidate(key) {
     const entry = this.shortTerm.get(key);
     if (!entry) return;
 
@@ -130,7 +130,7 @@ export class MemoryStore {
     }
   }
 
-  private updateLastAccess(key) {
+  updateLastAccess(key) {
     this.lastAccess.set(key, Date.now());
   }
 

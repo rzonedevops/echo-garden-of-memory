@@ -117,7 +117,7 @@ export class MemoryNetwork {
     return this.clusters;
   }
 
-  private exploreCluster(startKey, visited) {
+  exploreCluster(startKey, visited) {
     const cluster = new Set();
     const queue = [startKey];
     
