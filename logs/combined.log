@@ -366,3 +366,129 @@
 {"level":"info","meshworkSize":8,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570872:0.6949338879971008","timestamp":"2025-09-27T14:49:30.872Z"}
 {"continuityPreserved":true,"level":"info","memoryKey":"anomaly-test","message":"Memory processed through holographic identity","patternId":"pattern:1758984570872:0.6949338879971008","timestamp":"2025-09-27T14:49:30.872Z"}
 {"anomalyCount":8,"level":"warn","message":"Identity anomalies detected","severities":[0.75,0.75,0.5833333333333334,0.5833333333333334,0.6666666666666667,0.5833333333333334,0.5833333333333334,0.6666666666666667],"timestamp":"2025-09-27T14:49:30.873Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615101:0.08415353710561346","timestamp":"2025-09-27T14:50:15.101Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615109:0.8810502887443525","timestamp":"2025-09-27T14:50:15.109Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615109:0.8867961942424496","timestamp":"2025-09-27T14:50:15.109Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615110:0.30464610041933127","timestamp":"2025-09-27T14:50:15.110Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615110:0.03430525697684961","timestamp":"2025-09-27T14:50:15.110Z"}
+{"level":"info","message":"Stored memory: holographic-test-1","timestamp":"2025-09-27T14:50:15.127Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615129:0.3841553596991092","timestamp":"2025-09-27T14:50:15.130Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"holographic-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615129:0.3841553596991092","timestamp":"2025-09-27T14:50:15.130Z"}
+{"level":"info","message":"Stored memory: holo-1","timestamp":"2025-09-27T14:50:15.132Z"}
+{"level":"info","message":"Stored memory: holo-2","timestamp":"2025-09-27T14:50:15.133Z"}
+{"level":"info","message":"Stored memory: holo-3","timestamp":"2025-09-27T14:50:15.133Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:50:15.133Z"}
+{"level":"info","message":"Stored memory: intuition-base-1","timestamp":"2025-09-27T14:50:15.134Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615135:0.5378581439854375","timestamp":"2025-09-27T14:50:15.135Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615135:0.5378581439854375","timestamp":"2025-09-27T14:50:15.135Z"}
+{"level":"info","message":"Stored memory: intuition-base-2","timestamp":"2025-09-27T14:50:15.136Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615136:0.16205522782110138","timestamp":"2025-09-27T14:50:15.136Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615136:0.16205522782110138","timestamp":"2025-09-27T14:50:15.136Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.5814779190070166,"timestamp":"2025-09-27T14:50:15.137Z"}
+{"level":"info","message":"Stored memory: baseline-1","timestamp":"2025-09-27T14:50:15.137Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615138:0.4071051867134803","timestamp":"2025-09-27T14:50:15.138Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615138:0.4071051867134803","timestamp":"2025-09-27T14:50:15.138Z"}
+{"level":"info","message":"Stored memory: baseline-2","timestamp":"2025-09-27T14:50:15.138Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615138:0.4084165562943667","timestamp":"2025-09-27T14:50:15.138Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615138:0.4084165562943667","timestamp":"2025-09-27T14:50:15.139Z"}
+{"level":"info","message":"Stored memory: anomalous-1","timestamp":"2025-09-27T14:50:15.139Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615139:0.35447321965652123","timestamp":"2025-09-27T14:50:15.139Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"anomalous-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615139:0.35447321965652123","timestamp":"2025-09-27T14:50:15.139Z"}
+{"anomalyCount":1,"level":"warn","message":"Identity anomalies detected","severities":[0.33333333333333337],"timestamp":"2025-09-27T14:50:15.140Z"}
+{"level":"info","message":"Stored memory: snapshot-test-1","timestamp":"2025-09-27T14:50:15.141Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615141:0.9182883846984509","timestamp":"2025-09-27T14:50:15.141Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"snapshot-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615141:0.9182883846984509","timestamp":"2025-09-27T14:50:15.141Z"}
+{"level":"info","message":"Stored memory: export-test-1","timestamp":"2025-09-27T14:50:15.142Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615142:0.7242127240017462","timestamp":"2025-09-27T14:50:15.142Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615142:0.7242127240017462","timestamp":"2025-09-27T14:50:15.142Z"}
+{"level":"info","message":"Stored memory: export-test-2","timestamp":"2025-09-27T14:50:15.142Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615143:0.9554998475497118","timestamp":"2025-09-27T14:50:15.143Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615143:0.9554998475497118","timestamp":"2025-09-27T14:50:15.143Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:50:15.144Z"}
+{"level":"info","message":"Stored memory: continuity-1","timestamp":"2025-09-27T14:50:15.144Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615144:0.017457282257975493","timestamp":"2025-09-27T14:50:15.144Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615144:0.017457282257975493","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","message":"Stored memory: continuity-2","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615145:0.20665290421170757","timestamp":"2025-09-27T14:50:15.145Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615145:0.20665290421170757","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","message":"Stored memory: continuity-3","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615145:0.63449498388863","timestamp":"2025-09-27T14:50:15.145Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-3","message":"Memory processed through holographic identity","patternId":"pattern:1758984615145:0.63449498388863","timestamp":"2025-09-27T14:50:15.146Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.423Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.427Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.427Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.429Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.429Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.430Z"}
+{"id":"context1","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.432Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.432Z"}
+{"id":"context2","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.432Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.432Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.433Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.435Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.436Z"}
+{"level":"info","message":"Stored memory: key3","timestamp":"2025-09-27T14:50:15.436Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.478Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-27T14:50:15.482Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.485Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.485Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.497Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.498Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.498Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.499Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.544Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-27T14:50:15.549Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-27T14:50:15.549Z"}
+{"level":"info","message":"Recalled memory: test1","timestamp":"2025-09-27T14:50:15.551Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.552Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.553Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.553Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.553Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.554Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.554Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.555Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.555Z"}
+{"level":"info","message":"Linked memories: key1 -> key2","timestamp":"2025-09-27T14:50:15.555Z"}
+{"level":"info","message":"Found 1 related memories for: key1","timestamp":"2025-09-27T14:50:15.556Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.558Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.558Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.558Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.559Z"}
+{"id":"test-context","level":"info","message":"Started new context:","startTime":1758984615560,"timestamp":"2025-09-27T14:50:15.560Z"}
+{"level":"info","message":"Started context: test-context","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.562Z"}
+{"duration":2,"id":"test-context","level":"info","memories":{},"memoryCount":2,"message":"Ended context:","startTime":1758984615560,"summary":[],"timestamp":"2025-09-27T14:50:15.562Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.564Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.564Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.565Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.565Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.565Z"}
+{"level":"info","message":"Linked memories: nonexistent1 -> nonexistent2","timestamp":"2025-09-27T14:50:15.565Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.573Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.573Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.573Z"}
+{"level":"info","message":"Pruned old echo: echo:1758984615810","timestamp":"2025-09-27T14:50:15.810Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.857Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.862Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.863Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.873Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-27T14:50:15.873Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.874Z"}
