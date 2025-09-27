@@ -302,12 +302,16 @@ export class MemoryOrchestrator {
   // Helper methods
 
   async getRecentMemories(limit = 100) {
-    // Simple implementation - get all memories and sort by timestamp
+    // Get memories from both short-term and long-term storage
     const allMemories = [];
     
-    // This is a simplified approach - in a real implementation,
-    // you'd want to optimize this with proper indexing
-    for (const [key, memory] of this.store.memories.entries()) {
+    // Add short-term memories
+    for (const [key, memory] of this.store.shortTerm.entries()) {
+      allMemories.push({ key, ...memory });
+    }
+    
+    // Add long-term memories
+    for (const [key, memory] of this.store.longTerm.entries()) {
       allMemories.push({ key, ...memory });
     }
     
