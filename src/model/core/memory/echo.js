@@ -61,7 +61,7 @@ export class EchoManager {
     return merged;
   }
 
-  private calculateRelevance(memory, echo) {
+  calculateRelevance(memory, echo) {
     const timeDecay = Math.exp(
       -(Date.now() - new Date(echo.timestamp).getTime()) / 
       MEMORY_CONSTANTS.MAX_MEMORY_AGE
@@ -76,7 +76,7 @@ export class EchoManager {
     return echo.strength * timeDecay * (0.3 + 0.7 * tagOverlap);
   }
 
-  private mergeContent(contents) {
+  mergeContent(contents) {
     // Simplified content merging - override with domain-specific logic
     return contents.reduce((merged, content) => ({
       ...merged,

@@ -223,3 +223,31 @@
 {"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-27T14:35:55.432Z"}
 {"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-27T14:35:56.375Z"}
 {"level":"info","message":"Created 3 batches of size 2","timestamp":"2025-09-27T14:35:56.669Z"}
+{"level":"info","message":"Pruned old echo: echo:1758983927060","timestamp":"2025-09-27T14:38:47.060Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984182989:0.3740202712940863","timestamp":"2025-09-27T14:43:02.990Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183002:0.22362088472574548","timestamp":"2025-09-27T14:43:03.002Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183003:0.3210951230301853","timestamp":"2025-09-27T14:43:03.003Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183003:0.5440265334241694","timestamp":"2025-09-27T14:43:03.003Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183004:0.13306756578563417","timestamp":"2025-09-27T14:43:03.004Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270879:0.45038643590028227","timestamp":"2025-09-27T14:44:30.880Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270889:0.17197440758343618","timestamp":"2025-09-27T14:44:30.889Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270890:0.31027827205250613","timestamp":"2025-09-27T14:44:30.890Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270890:0.5431371976971637","timestamp":"2025-09-27T14:44:30.890Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270891:0.4456004425800637","timestamp":"2025-09-27T14:44:30.891Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300946:0.4157104738209505","timestamp":"2025-09-27T14:45:00.946Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300950:0.45872192542782075","timestamp":"2025-09-27T14:45:00.950Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300951:0.0360398280491554","timestamp":"2025-09-27T14:45:00.951Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300951:0.10861718307898127","timestamp":"2025-09-27T14:45:00.951Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300951:0.09728199055315834","timestamp":"2025-09-27T14:45:00.951Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.788Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-27T14:45:19.790Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.792Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.792Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:45:19.799Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.801Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.801Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:45:19.802Z"}
