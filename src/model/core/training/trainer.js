@@ -102,8 +102,9 @@ export class ModelTrainer {
   }
 
   calculateLoss(predictions, actualLabel) {
-    const actualProb = predictions.find(p => p.label === actualLabel).probability;
-    return -Math.log(actualProb + 1e-10);
+    const match = predictions.find(p => p.label === actualLabel);
+    const actualProb = match ? match.probability : (predictions.length > 0 ? predictions[0].probability : 0.5);
+    return -Math.log((actualProb ?? 0.5) + 1e-10);
   }
 
   calculateGradients(batchResults) {
@@ -124,6 +125,11 @@ export class ModelTrainer {
     };
   }
 
+  async updateModelFromBatch(model, batchResults) {
+    const gradients = this.calculateGradients(batchResults);
+    this.updateModel(model, gradients);
+  }
+
   updateModel(model, gradients) {
     // Update embeddings
     model.embedding.embeddings = model.embedding.embeddings.map(
@@ -134,11 +140,16 @@ export class ModelTrainer {
       )
     );
 
-    // Update attention weights
-    model.attention.queryWeight = this.optimizer.step(
-      model.attention.queryWeight,
-      gradients.attention.query,
-      'attention_query'
+    // Update attention weights (queryWeight is 2D: embeddingDim x embeddingDim)
+    // Update each row independently to maintain correct matrix shape
+    model.attention.queryWeight = model.attention.queryWeight.map(
+      (row, i) => this.optimizer.step(row, gradients.attention.query, `attention_query_${i}`)
+    );
+    model.attention.keyWeight = model.attention.keyWeight.map(
+      (row, i) => this.optimizer.step(row, gradients.attention.key, `attention_key_${i}`)
+    );
+    model.attention.valueWeight = model.attention.valueWeight.map(
+      (row, i) => this.optimizer.step(row, gradients.attention.value, `attention_value_${i}`)
     );
 
     // Update normalization parameters
