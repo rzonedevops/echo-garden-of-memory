@@ -13,7 +13,7 @@ test('EchoManager should create and find echoes', () => {
   
   const echo = manager.createEcho(memory);
   expect(echo.original).toBe(memory.key);
-  expect(echo.strength).toBe(1.0);
+  expect(echo.strength).toBe(0.8);
   
   const found = manager.findEchoes(memory);
   expect(found).toHaveLength(1);

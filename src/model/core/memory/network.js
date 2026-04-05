@@ -15,7 +15,7 @@ export class MemoryNetwork {
     this.nodes.set(key, {
       memory,
       connections: new Set(),
-      strength: 1.0,
+      strength: 0.5,
       lastAccess: Date.now()
     });
   }

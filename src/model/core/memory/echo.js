@@ -14,7 +14,7 @@ export class EchoManager {
       context: { ...memory.context },
       associations: new Set(memory.associations),
       timestamp: new Date().toISOString(),
-      strength: 1.0
+      strength: 0.8
     };
 
     this.echoes.set(echo.key, echo);
