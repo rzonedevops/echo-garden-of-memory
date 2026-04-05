@@ -1,5 +1,6 @@
 import fs from 'fs';
 import path from 'path';
+import { fileURLToPath } from 'url';
 import { tokenize } from '../utils/tokenizer.js';
 import logger from '../utils/logger.js';
 
@@ -171,9 +172,13 @@ export class VocabularyIntrospector {
    * @returns {string|null}
    */
   classifySentence(sentence) {
+    const words = new Set(tokenize(sentence));
     for (const [label, keywords] of Object.entries(LABEL_KEYWORDS)) {
       for (const keyword of keywords) {
-        if (sentence.includes(keyword)) {
+        // Multi-word keywords: check as a substring of the original sentence.
+        // Single-word keywords: require an exact whole-word match via the token set.
+        const isMultiWord = keyword.includes(' ');
+        if (isMultiWord ? sentence.includes(keyword) : words.has(keyword)) {
           return label;
         }
       }
@@ -189,16 +194,28 @@ export class VocabularyIntrospector {
     const dirPath = path.dirname(this.outputPath);
     fs.mkdirSync(dirPath, { recursive: true });
 
-    const lines = ['text,label', ...entries.map(e => `${e.text},${e.label}`)];
+    const lines = ['text,label', ...entries.map(e => `${csvField(e.text)},${csvField(e.label)}`)];
     fs.writeFileSync(this.outputPath, lines.join('\n'));
 
     logger.info(`Vocabulary seed written to ${this.outputPath}`);
   }
 }
 
-// Run when invoked directly as a script
-const isMain =
-  process.argv[1] && path.resolve(process.argv[1]) === path.resolve('src/data/introspect.js');
+/**
+ * Escape a value for safe inclusion as a CSV field.
+ * Wraps the value in double-quotes and escapes any embedded double-quotes
+ * by doubling them, per RFC 4180.
+ * @param {string} value
+ * @returns {string}
+ */
+function csvField(value) {
+  const escaped = String(value).replace(/"/g, '""');
+  return `"${escaped}"`;
+}
+
+// Run when invoked directly as an ES module script
+const __filename = fileURLToPath(import.meta.url);
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename);
 
 if (isMain) {
   const introspector = new VocabularyIntrospector();

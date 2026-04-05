@@ -176,9 +176,30 @@ test('writeVocabularySeed should create a CSV with header and rows', async () =>
   const lines = content.split('\n');
 
   expect(lines[0]).toBe('text,label');
-  expect(lines[1]).toBe('our identity defines us,identity');
-  expect(lines[2]).toBe('we recall stored memory,memory');
+  expect(lines[1]).toBe('"our identity defines us","identity"');
+  expect(lines[2]).toBe('"we recall stored memory","memory"');
 });
+
+test('writeVocabularySeed should escape fields containing commas and quotes', async () => {
+  const introspector = new VocabularyIntrospector({
+    narrativesDir: TEST_NARRATIVES_DIR,
+    outputPath: TEST_OUTPUT_PATH
+  });
+
+  const entries = [
+    { text: 'memory, identity, and growth', label: 'identity' },
+    { text: 'she said "hello world" to us', label: 'connection' }
+  ];
+
+  await introspector.writeVocabularySeed(entries);
+
+  const content = fs.readFileSync(TEST_OUTPUT_PATH, 'utf-8');
+  const lines = content.split('\n');
+
+  expect(lines[1]).toBe('"memory, identity, and growth","identity"');
+  expect(lines[2]).toBe('"she said ""hello world"" to us","connection"');
+});
+
 
 test('introspect should generate vocabulary from real narrative files', async () => {
   writeNarrative(
