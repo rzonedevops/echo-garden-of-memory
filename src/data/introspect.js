@@ -145,18 +145,11 @@ export class VocabularyIntrospector {
    * @returns {string[]}
    */
   extractSentences(content) {
-    const plain = content
-      .replace(/```[\s\S]*?```/g, ' ')
-      .replace(/`[^`]*`/g, ' ')
-      .replace(/#+\s+/g, ' ')
-      .replace(/\*\*/g, '')
-      .replace(/\*/g, '')
-      .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
-      .replace(/_/g, ' ');
+    const plain = stripMarkdown(content);
 
     return plain
       .split(/[.!?\n]+/)
-      .map(s => s.replace(/[^a-zA-Z\s]/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase())
+      .map(s => normalizeText(s))
       .filter(s => {
         const tokens = tokenize(s);
         return (
@@ -202,6 +195,36 @@ export class VocabularyIntrospector {
 }
 
 /**
+ * Remove markdown formatting from raw content, returning plain text.
+ * @param {string} content
+ * @returns {string}
+ */
+function stripMarkdown(content) {
+  return content
+    .replace(/```[\s\S]*?```/g, ' ')
+    .replace(/`[^`]*`/g, ' ')
+    .replace(/#+\s+/g, ' ')
+    .replace(/\*\*/g, '')
+    .replace(/\*/g, '')
+    .replace(/\[([^\]]*)\]\([^)]*\)/g, '$1')
+    .replace(/_/g, ' ');
+}
+
+/**
+ * Normalise a raw sentence fragment: strip non-alpha characters, collapse
+ * whitespace, trim, and convert to lowercase.
+ * @param {string} sentence
+ * @returns {string}
+ */
+function normalizeText(sentence) {
+  return sentence
+    .replace(/[^a-zA-Z\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase();
+}
+
+/**
  * Escape a value for safe inclusion as a CSV field.
  * Wraps the value in double-quotes and escapes any embedded double-quotes
  * by doubling them, per RFC 4180.
@@ -214,8 +237,8 @@ function csvField(value) {
 }
 
 // Run when invoked directly as an ES module script
-const __filename = fileURLToPath(import.meta.url);
-const isMain = process.argv[1] && path.resolve(process.argv[1]) === path.resolve(__filename);
+const scriptPath = fileURLToPath(import.meta.url);
+const isMain = process.argv[1] && path.resolve(process.argv[1]) === path.resolve(scriptPath);
 
 if (isMain) {
   const introspector = new VocabularyIntrospector();

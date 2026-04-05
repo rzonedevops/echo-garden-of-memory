@@ -200,7 +200,6 @@ test('writeVocabularySeed should escape fields containing commas and quotes', as
   expect(lines[2]).toBe('"she said ""hello world"" to us","connection"');
 });
 
-
 test('introspect should generate vocabulary from real narrative files', async () => {
   writeNarrative(
     'theme_identity.md',
