@@ -2,6 +2,7 @@ import { MemoryStore } from './store.js';
 import { ContinuityManager } from './continuity.js';
 import { EchoManager } from './echo.js';
 import { MemoryNetwork } from './network.js';
+import { HolographicIdentity } from './holographic.js';
 import { MEMORY_CONSTANTS } from './types.js';
 import logger from '../../../utils/logger.js';
 
@@ -12,6 +13,7 @@ export class MemoryOrchestrator {
     this.continuity = new ContinuityManager(config);
     this.echoes = new EchoManager();
     this.network = new MemoryNetwork(config);
+    this.holographicIdentity = new HolographicIdentity(config);
   }
 
   async storeMemory(key, content, context = {}) {
@@ -168,5 +170,161 @@ export class MemoryOrchestrator {
 
   async synthesizeContext() {
     return this.continuity.synthesizeContext();
+  }
+
+  // Holographic Identity Methods
+
+  /**
+   * Process memory through holographic identity system
+   */
+  async processHolographicMemory(key, content, context = {}) {
+    try {
+      // Store memory normally first
+      const memory = await this.storeMemory(key, content, context);
+      
+      // Ingest into holographic identity
+      const experiencePattern = this.holographicIdentity.ingestExperience(memory, context);
+      
+      // Preserve continuity
+      const continuityResult = this.holographicIdentity.preserveContinuity(memory);
+      
+      logger.info('Memory processed through holographic identity', {
+        memoryKey: key,
+        patternId: experiencePattern.id,
+        continuityPreserved: continuityResult.continuityPreserved
+      });
+      
+      return {
+        memory,
+        experiencePattern,
+        continuityResult
+      };
+    } catch (error) {
+      logger.error('Failed to process holographic memory:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Reconstruct holographic representation from distributed echoes
+   */
+  async reconstructHologram(memoryKeys = []) {
+    try {
+      // Get echoes for specified memories or all recent echoes
+      let echoes = [];
+      if (memoryKeys.length > 0) {
+        for (const key of memoryKeys) {
+          const memory = await this.store.recall(key);
+          if (memory) {
+            const memoryEchoes = this.echoes.findEchoes(memory);
+            echoes.push(...memoryEchoes);
+          }
+        }
+      } else {
+        // Get all echoes
+        echoes = Array.from(this.echoes.echoes.values());
+      }
+      
+      // Reconstruct hologram
+      const hologram = this.holographicIdentity.reconstructHologram(echoes);
+      
+      logger.info('Hologram reconstructed', {
+        echoCount: echoes.length,
+        patternCount: hologram.patterns.size,
+        coherence: hologram.coherence
+      });
+      
+      return hologram;
+    } catch (error) {
+      logger.error('Failed to reconstruct hologram:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Generate gestalt-level intuitive response
+   */
+  async gestaltIntuition(query, context = {}) {
+    try {
+      const intuition = this.holographicIdentity.gestaltIntuition(query, context);
+      
+      logger.info('Gestalt intuition generated', {
+        confidence: intuition.confidence,
+        insightCount: intuition.insights.length,
+        resonance: intuition.resonance
+      });
+      
+      return intuition;
+    } catch (error) {
+      logger.error('Failed to generate gestalt intuition:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Detect anomalies in recent experiences
+   */
+  async detectIdentityAnomalies(limit = 100) {
+    try {
+      // Get recent memories
+      const recentMemories = await this.getRecentMemories(limit);
+      
+      // Detect anomalies
+      const anomalies = this.holographicIdentity.detectAnomalies(recentMemories);
+      
+      if (anomalies.length > 0) {
+        logger.warn('Identity anomalies detected', {
+          anomalyCount: anomalies.length,
+          severities: anomalies.map(a => a.severity)
+        });
+      }
+      
+      return anomalies;
+    } catch (error) {
+      logger.error('Failed to detect identity anomalies:', error);
+      throw error;
+    }
+  }
+
+  /**
+   * Get current identity snapshot
+   */
+  getIdentitySnapshot() {
+    return this.holographicIdentity.getIdentitySnapshot();
+  }
+
+  /**
+   * Export holographic identity data
+   */
+  exportHolographicIdentity() {
+    return this.holographicIdentity.exportHolographicData();
+  }
+
+  /**
+   * Import holographic identity data
+   */
+  importHolographicIdentity(data) {
+    return this.holographicIdentity.importHolographicData(data);
+  }
+
+  // Helper methods
+
+  async getRecentMemories(limit = 100) {
+    // Get memories from both short-term and long-term storage
+    const allMemories = [];
+    
+    // Add short-term memories
+    for (const [key, memory] of this.store.shortTerm.entries()) {
+      allMemories.push({ key, ...memory });
+    }
+    
+    // Add long-term memories
+    for (const [key, memory] of this.store.longTerm.entries()) {
+      allMemories.push({ key, ...memory });
+    }
+    
+    return allMemories
+      .sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp))
+      .slice(0, limit);
   }
 }

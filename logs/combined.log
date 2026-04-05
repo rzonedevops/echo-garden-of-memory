@@ -161,6 +161,337 @@
 {"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/project/src/model/core/training/trainer.js:112:70)\n    at eval (/home/project/src/model/core/training/pipeline.js:83:25)\n    at async TrainingPipeline.processBatch (/home/project/src/model/core/training/pipeline.js:77:26)\n    at async TrainingPipeline.processEpoch (/home/project/src/model/core/training/pipeline.js:65:7)\n    at async TrainingPipeline.execute (/home/project/src/model/core/training/pipeline.js:24:30)\n    at async eval (/home/project/src/model/core/training/__tests__/pipeline.test.js:81:3)","timestamp":"2024-11-29T15:50:19.936Z"}
 {"level":"info","message":"Created 3 batches of size 2","timestamp":"2024-11-29T15:50:24.668Z"}
 {"averageLatency":1050,"errorRate":0.5,"lastError":{"message":"Error","timestamp":"2024-11-29T15:53:23.256Z"},"level":"warn","message":"Unhealthy deployment metrics:","timestamp":"2024-11-29T15:53:23.256Z","totalRequests":2}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-27T14:35:44.823Z"}
+{"level":"info","message":"Starting preprocessing of file: input.csv","timestamp":"2025-09-27T14:35:44.868Z"}
+{"level":"info","message":"Successfully preprocessed input.csv","timestamp":"2025-09-27T14:35:44.872Z"}
+{"level":"info","message":"Saved model version 1","timestamp":"2025-09-27T14:35:45.237Z"}
+{"level":"info","message":"Loaded model version 1","timestamp":"2025-09-27T14:35:45.248Z"}
+{"level":"info","message":"Deleted model version 1","timestamp":"2025-09-27T14:35:45.253Z"}
+{"level":"info","message":"Starting training process","timestamp":"2025-09-27T14:35:45.442Z"}
+{"accuracy":0.5,"averageLoss":0.8111093716383662,"labelMetrics":{"A":{"f1":0,"precision":0,"recall":0},"B":{"f1":1,"precision":1,"recall":1}},"level":"info","message":"Epoch 1, Metrics:","timestamp":"2025-09-27T14:35:45.450Z","totalSamples":2}
+{"level":"error","message":"Training failed: Cannot convert \"0.24592500596502986,0.37002147228510773-0.004821331562067116\" to a number","stack":"Error: Cannot convert \"0.24592500596502986,0.37002147228510773-0.004821331562067116\" to a number\n    at convert (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/core/function/typed.js:275:15)\n    at Array.convertArg (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1070:20)\n    at convertArgs (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1024:43)\n    at generic (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1443:25)\n    at multiplyScalar (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1472:22)\n    at _denseDot (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/matrix/dot.js:85:15)\n    at dot (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/typed-function/lib/esm/typed-function.mjs:1464:20)\n    at _multiplyVectorVector (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/arithmetic/multiply.js:87:12)\n    at MatrixMatrix (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/arithmetic/multiply.js:833:18)\n    at Module.<anonymous> (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/mathjs/lib/esm/function/arithmetic/multiply.js:816:15)","timestamp":"2025-09-27T14:35:45.461Z"}
+{"level":"info","message":"Starting training process","timestamp":"2025-09-27T14:35:45.463Z"}
+{"level":"error","message":"Training failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:84:20\n    at Array.map (<anonymous>)\n    at ModelTrainer.trainBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:79:32)\n    at ModelTrainer.trainEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:73:18)\n    at ModelTrainer.train (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:33:20)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/trainer.test.js:69:32\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:135:14\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:60:26\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:17)","timestamp":"2025-09-27T14:35:45.467Z"}
+{"body":{},"level":"info","message":"GET /status","query":{},"timestamp":"2025-09-27T14:35:46.353Z"}
+{"body":{"text":"hello world"},"level":"info","message":"POST /predict","query":{},"timestamp":"2025-09-27T14:35:46.385Z"}
+{"level":"error","message":"Prediction failed: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:68:45\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-27T14:35:46.393Z"}
+{"level":"error","message":"Prediction error: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:68:45\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-27T14:35:46.394Z"}
+{"body":{"texts":["hello world","goodbye"]},"level":"info","message":"POST /batch-predict","query":{},"timestamp":"2025-09-27T14:35:46.408Z"}
+{"level":"error","message":"Prediction failed: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:33\n    at Array.map (<anonymous>)\n    at ModelPredictor.batchPredict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:15)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:94:46\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-27T14:35:46.409Z"}
+{"level":"error","message":"Prediction failed: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:33\n    at Array.map (<anonymous>)\n    at ModelPredictor.batchPredict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:15)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:94:46\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-27T14:35:46.410Z"}
+{"level":"error","message":"Batch prediction error: Cannot read properties of undefined (reading 'reduce')","stack":"TypeError: Cannot read properties of undefined (reading 'reduce')\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:19:30\n    at Array.map (<anonymous>)\n    at NormalizationModel.normalize (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/normalization.js:18:23)\n    at CompositeLanguageModel.forward (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/composite.js:26:37)\n    at ModelPredictor.predict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:17:34)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:33\n    at Array.map (<anonymous>)\n    at ModelPredictor.batchPredict (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/inference/predictor.js:42:15)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:94:46\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-27T14:35:46.410Z"}
+{"body":{},"level":"info","message":"POST /predict","query":{},"timestamp":"2025-09-27T14:35:46.417Z"}
+{"level":"error","message":"Prediction error: Missing text input","stack":"Error: Missing text input\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:54:17\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:149:13)\n    at Route.dispatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/route.js:119:3)\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/index.js:284:15\n    at Function.process_params (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/index.js:346:12)\n    at next (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/index.js:280:10)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/deployment/server.js:34:7\n    at Layer.handle [as handle_request] (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/express/lib/router/layer.js:95:5)","timestamp":"2025-09-27T14:35:46.418Z"}
+{"accuracy":0,"averageLoss":0.2918464356861984,"confusionMatrix":{"farewell":{"farewell":0,"greeting":0,"question":1},"greeting":{"farewell":1,"greeting":0,"question":0},"question":{"farewell":0,"greeting":0,"question":0}},"labelMetrics":{"farewell":{"f1":0,"precision":0,"recall":0},"greeting":{"f1":0,"precision":0,"recall":0},"question":{"f1":0,"precision":0,"recall":0}},"level":"info","message":"Model evaluation completed","sampleCount":2,"timestamp":"2025-09-27T14:35:47.522Z"}
+{"level":"info","message":"Added version 1 to registry","timestamp":"2025-09-27T14:35:47.844Z"}
+{"level":"info","message":"Added version 1 to registry","timestamp":"2025-09-27T14:35:47.850Z"}
+{"level":"info","message":"Added version 2 to registry","timestamp":"2025-09-27T14:35:47.851Z"}
+{"level":"info","message":"Added version 1 to registry","timestamp":"2025-09-27T14:35:47.865Z"}
+{"level":"info","message":"Added version 2 to registry","timestamp":"2025-09-27T14:35:47.866Z"}
+{"level":"info","message":"Added version 3 to registry","timestamp":"2025-09-27T14:35:47.867Z"}
+{"level":"info","message":"Added version 4 to registry","timestamp":"2025-09-27T14:35:47.868Z"}
+{"level":"info","message":"Added version 5 to registry","timestamp":"2025-09-27T14:35:47.869Z"}
+{"level":"info","message":"Added version 6 to registry","timestamp":"2025-09-27T14:35:47.870Z"}
+{"level":"info","message":"Deleted old version: 3","timestamp":"2025-09-27T14:35:47.871Z"}
+{"level":"info","message":"Deleted old version: 2","timestamp":"2025-09-27T14:35:47.872Z"}
+{"level":"info","message":"Deleted old version: 1","timestamp":"2025-09-27T14:35:47.872Z"}
+{"level":"info","message":"Starting training pipeline","timestamp":"2025-09-27T14:35:48.144Z"}
+{"level":"info","message":"Created 1 batches of size 2","timestamp":"2025-09-27T14:35:48.149Z"}
+{"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:79:25\n    at async Promise.all (index 0)\n    at TrainingPipeline.processBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:73:26)\n    at TrainingPipeline.processEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:61:7)\n    at TrainingPipeline.execute (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:20:30)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/pipeline.test.js:23:18\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)","timestamp":"2025-09-27T14:35:48.161Z"}
+{"level":"info","message":"Starting training pipeline","timestamp":"2025-09-27T14:35:48.163Z"}
+{"level":"info","message":"Created 1 batches of size 2","timestamp":"2025-09-27T14:35:48.163Z"}
+{"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:79:25\n    at async Promise.all (index 0)\n    at TrainingPipeline.processBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:73:26)\n    at TrainingPipeline.processEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:61:7)\n    at TrainingPipeline.execute (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:20:30)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/pipeline.test.js:50:18\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)","timestamp":"2025-09-27T14:35:48.165Z"}
+{"level":"info","message":"Starting training pipeline","timestamp":"2025-09-27T14:35:48.166Z"}
+{"level":"info","message":"Created 1 batches of size 2","timestamp":"2025-09-27T14:35:48.166Z"}
+{"level":"error","message":"Training pipeline failed: Cannot read properties of undefined (reading 'probability')","stack":"TypeError: Cannot read properties of undefined (reading 'probability')\n    at ModelTrainer.calculateLoss (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/trainer.js:105:70)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:79:25\n    at async Promise.all (index 0)\n    at TrainingPipeline.processBatch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:73:26)\n    at TrainingPipeline.processEpoch (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:61:7)\n    at TrainingPipeline.execute (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/pipeline.js:20:30)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/training/__tests__/pipeline.test.js:77:3\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)","timestamp":"2025-09-27T14:35:48.168Z"}
+{"level":"info","message":"Deployed model version 1","timestamp":"2025-09-27T14:35:49.016Z"}
+{"level":"info","message":"Deployed model version 1","timestamp":"2025-09-27T14:35:49.029Z"}
+{"level":"info","message":"Deployed model version 1","timestamp":"2025-09-27T14:35:49.031Z"}
+{"level":"info","message":"Deployed model version 2","timestamp":"2025-09-27T14:35:49.032Z"}
+{"level":"info","message":"Model server running at http://localhost:3000","timestamp":"2025-09-27T14:35:49.036Z"}
+{"accuracy":0.5,"averageLoss":0.7803238738942391,"confusionMatrix":{"A":{"A":1,"B":0},"B":{"A":1,"B":0}},"labelMetrics":{"A":{"f1":0.6666666666666666,"precision":0.5,"recall":1},"B":{"f1":0,"precision":0,"recall":0}},"level":"info","message":"Model evaluation completed","sampleCount":2,"timestamp":"2025-09-27T14:35:50.126Z"}
+{"level":"info","message":"Created 3 batches of size 2","timestamp":"2025-09-27T14:35:50.868Z"}
+{"level":"info","message":"Early stopping triggered after 2 epochs without improvement","timestamp":"2025-09-27T14:35:53.933Z"}
+{"level":"info","message":"Early stopping triggered after 2 epochs without improvement","timestamp":"2025-09-27T14:35:53.936Z"}
+{"level":"info","message":"Starting 3-fold cross validation","timestamp":"2025-09-27T14:35:54.419Z"}
+{"level":"info","message":"Created 2 batches of size 32","timestamp":"2025-09-27T14:35:54.426Z"}
+{"accuracy":0.375,"averageLoss":0.5,"labelMetrics":{"farewell":{"f1":0.5,"precision":0.5,"recall":0.5},"greeting":{"f1":0.3076923076923077,"precision":0.4,"recall":0.25}},"level":"info","message":"Fold 1 metrics:","timestamp":"2025-09-27T14:35:54.461Z","totalSamples":16}
+{"level":"info","message":"Created 2 batches of size 32","timestamp":"2025-09-27T14:35:54.462Z"}
+{"accuracy":0.375,"averageLoss":0.5,"labelMetrics":{"farewell":{"f1":0.42857142857142855,"precision":0.6,"recall":0.3333333333333333},"greeting":{"f1":0.4615384615384615,"precision":0.5,"recall":0.42857142857142855}},"level":"info","message":"Fold 2 metrics:","timestamp":"2025-09-27T14:35:54.485Z","totalSamples":16}
+{"level":"info","message":"Created 1 batches of size 32","timestamp":"2025-09-27T14:35:54.485Z"}
+{"accuracy":0.2222222222222222,"averageLoss":0.5,"labelMetrics":{"farewell":{"f1":0.39999999999999997,"precision":0.42857142857142855,"recall":0.375},"greeting":{"f1":0.13333333333333333,"precision":0.2,"recall":0.1}},"level":"info","message":"Fold 3 metrics:","timestamp":"2025-09-27T14:35:54.499Z","totalSamples":18}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-27T14:35:55.432Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-27T14:35:56.375Z"}
+{"level":"info","message":"Created 3 batches of size 2","timestamp":"2025-09-27T14:35:56.669Z"}
+{"level":"info","message":"Pruned old echo: echo:1758983927060","timestamp":"2025-09-27T14:38:47.060Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984182989:0.3740202712940863","timestamp":"2025-09-27T14:43:02.990Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183002:0.22362088472574548","timestamp":"2025-09-27T14:43:03.002Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183003:0.3210951230301853","timestamp":"2025-09-27T14:43:03.003Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183003:0.5440265334241694","timestamp":"2025-09-27T14:43:03.003Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984183004:0.13306756578563417","timestamp":"2025-09-27T14:43:03.004Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270879:0.45038643590028227","timestamp":"2025-09-27T14:44:30.880Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270889:0.17197440758343618","timestamp":"2025-09-27T14:44:30.889Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270890:0.31027827205250613","timestamp":"2025-09-27T14:44:30.890Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270890:0.5431371976971637","timestamp":"2025-09-27T14:44:30.890Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984270891:0.4456004425800637","timestamp":"2025-09-27T14:44:30.891Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300946:0.4157104738209505","timestamp":"2025-09-27T14:45:00.946Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300950:0.45872192542782075","timestamp":"2025-09-27T14:45:00.950Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300951:0.0360398280491554","timestamp":"2025-09-27T14:45:00.951Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300951:0.10861718307898127","timestamp":"2025-09-27T14:45:00.951Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984300951:0.09728199055315834","timestamp":"2025-09-27T14:45:00.951Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.788Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-27T14:45:19.790Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.792Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.792Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:45:19.799Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.800Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:45:19.801Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:45:19.801Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:45:19.802Z"}
+{"level":"info","message":"Stored memory: holographic-test-1","timestamp":"2025-09-27T14:46:53.003Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413005:0.13279488690032726","timestamp":"2025-09-27T14:46:53.005Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"holographic-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413005:0.13279488690032726","timestamp":"2025-09-27T14:46:53.006Z"}
+{"level":"info","message":"Stored memory: holo-1","timestamp":"2025-09-27T14:46:53.008Z"}
+{"level":"info","message":"Stored memory: holo-2","timestamp":"2025-09-27T14:46:53.008Z"}
+{"level":"info","message":"Stored memory: holo-3","timestamp":"2025-09-27T14:46:53.008Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:46:53.008Z"}
+{"level":"info","message":"Stored memory: intuition-base-1","timestamp":"2025-09-27T14:46:53.009Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413009:0.056120295313760726","timestamp":"2025-09-27T14:46:53.009Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413009:0.056120295313760726","timestamp":"2025-09-27T14:46:53.010Z"}
+{"level":"info","message":"Stored memory: intuition-base-2","timestamp":"2025-09-27T14:46:53.010Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413010:0.6345779794688431","timestamp":"2025-09-27T14:46:53.010Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984413010:0.6345779794688431","timestamp":"2025-09-27T14:46:53.010Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.6324198238835979,"timestamp":"2025-09-27T14:46:53.011Z"}
+{"level":"info","message":"Stored memory: baseline-1","timestamp":"2025-09-27T14:46:53.011Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413012:0.6299075590394765","timestamp":"2025-09-27T14:46:53.012Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413012:0.6299075590394765","timestamp":"2025-09-27T14:46:53.012Z"}
+{"level":"info","message":"Stored memory: baseline-2","timestamp":"2025-09-27T14:46:53.012Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413012:0.002743382961478247","timestamp":"2025-09-27T14:46:53.012Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984413012:0.002743382961478247","timestamp":"2025-09-27T14:46:53.012Z"}
+{"level":"info","message":"Stored memory: anomalous-1","timestamp":"2025-09-27T14:46:53.012Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413012:0.11484561164330076","timestamp":"2025-09-27T14:46:53.012Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"anomalous-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413012:0.11484561164330076","timestamp":"2025-09-27T14:46:53.013Z"}
+{"level":"error","message":"Failed to detect identity anomalies: Cannot read properties of undefined (reading 'entries')","stack":"TypeError: Cannot read properties of undefined (reading 'entries')\n    at MemoryOrchestrator.getRecentMemories (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/orchestrator.js:310:53)\n    at MemoryOrchestrator.detectIdentityAnomalies (/home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/orchestrator.js:262:41)\n    at /home/runner/work/echo-garden-of-memory/echo-garden-of-memory/src/model/core/memory/__tests__/orchestrator-holographic.test.js:99:42\n    at runTest (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:781:11)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runSuite (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:909:15)\n    at runFiles (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:958:5)\n    at startTests (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/@vitest/runner/dist/index.js:967:3)\n    at file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:116:7\n    at withEnv (file:///home/runner/work/echo-garden-of-memory/echo-garden-of-memory/node_modules/vitest/dist/chunks/runtime-runBaseTests.oAvMKtQC.js:83:5)","timestamp":"2025-09-27T14:46:53.020Z"}
+{"level":"info","message":"Stored memory: snapshot-test-1","timestamp":"2025-09-27T14:46:53.021Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413021:0.7874160944153397","timestamp":"2025-09-27T14:46:53.021Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"snapshot-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413021:0.7874160944153397","timestamp":"2025-09-27T14:46:53.021Z"}
+{"level":"info","message":"Stored memory: export-test-1","timestamp":"2025-09-27T14:46:53.022Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413022:0.2867277367044281","timestamp":"2025-09-27T14:46:53.022Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413022:0.2867277367044281","timestamp":"2025-09-27T14:46:53.025Z"}
+{"level":"info","message":"Stored memory: export-test-2","timestamp":"2025-09-27T14:46:53.025Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413025:0.029551195782784534","timestamp":"2025-09-27T14:46:53.025Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984413025:0.029551195782784534","timestamp":"2025-09-27T14:46:53.025Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:46:53.026Z"}
+{"level":"info","message":"Stored memory: continuity-1","timestamp":"2025-09-27T14:46:53.027Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413027:0.5807822544700958","timestamp":"2025-09-27T14:46:53.027Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984413027:0.5807822544700958","timestamp":"2025-09-27T14:46:53.027Z"}
+{"level":"info","message":"Stored memory: continuity-2","timestamp":"2025-09-27T14:46:53.027Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413027:0.4837149702813319","timestamp":"2025-09-27T14:46:53.027Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984413027:0.4837149702813319","timestamp":"2025-09-27T14:46:53.027Z"}
+{"level":"info","message":"Stored memory: continuity-3","timestamp":"2025-09-27T14:46:53.027Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984413027:0.7386348167563805","timestamp":"2025-09-27T14:46:53.027Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-3","message":"Memory processed through holographic identity","patternId":"pattern:1758984413027:0.7386348167563805","timestamp":"2025-09-27T14:46:53.028Z"}
+{"level":"info","message":"Stored memory: holographic-test-1","timestamp":"2025-09-27T14:47:38.227Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458229:0.4210715260774536","timestamp":"2025-09-27T14:47:38.229Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"holographic-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458229:0.4210715260774536","timestamp":"2025-09-27T14:47:38.230Z"}
+{"level":"info","message":"Stored memory: holo-1","timestamp":"2025-09-27T14:47:38.231Z"}
+{"level":"info","message":"Stored memory: holo-2","timestamp":"2025-09-27T14:47:38.232Z"}
+{"level":"info","message":"Stored memory: holo-3","timestamp":"2025-09-27T14:47:38.232Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:47:38.232Z"}
+{"level":"info","message":"Stored memory: intuition-base-1","timestamp":"2025-09-27T14:47:38.233Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458233:0.8198218456777111","timestamp":"2025-09-27T14:47:38.233Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458233:0.8198218456777111","timestamp":"2025-09-27T14:47:38.233Z"}
+{"level":"info","message":"Stored memory: intuition-base-2","timestamp":"2025-09-27T14:47:38.234Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458234:0.6966755183251134","timestamp":"2025-09-27T14:47:38.234Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984458234:0.6966755183251134","timestamp":"2025-09-27T14:47:38.234Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.5051790078176442,"timestamp":"2025-09-27T14:47:38.234Z"}
+{"level":"info","message":"Stored memory: baseline-1","timestamp":"2025-09-27T14:47:38.235Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458235:0.2569172366578838","timestamp":"2025-09-27T14:47:38.235Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458235:0.2569172366578838","timestamp":"2025-09-27T14:47:38.235Z"}
+{"level":"info","message":"Stored memory: baseline-2","timestamp":"2025-09-27T14:47:38.236Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458236:0.1482918437925611","timestamp":"2025-09-27T14:47:38.236Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984458236:0.1482918437925611","timestamp":"2025-09-27T14:47:38.236Z"}
+{"level":"info","message":"Stored memory: anomalous-1","timestamp":"2025-09-27T14:47:38.236Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458236:0.3217344863522722","timestamp":"2025-09-27T14:47:38.236Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"anomalous-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458236:0.3217344863522722","timestamp":"2025-09-27T14:47:38.236Z"}
+{"anomalyCount":1,"level":"warn","message":"Identity anomalies detected","severities":[0.33333333333333337],"timestamp":"2025-09-27T14:47:38.237Z"}
+{"level":"info","message":"Stored memory: snapshot-test-1","timestamp":"2025-09-27T14:47:38.237Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458238:0.7466027836355116","timestamp":"2025-09-27T14:47:38.238Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"snapshot-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458238:0.7466027836355116","timestamp":"2025-09-27T14:47:38.238Z"}
+{"level":"info","message":"Stored memory: export-test-1","timestamp":"2025-09-27T14:47:38.238Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458238:0.14376977860539775","timestamp":"2025-09-27T14:47:38.238Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458238:0.14376977860539775","timestamp":"2025-09-27T14:47:38.239Z"}
+{"level":"info","message":"Stored memory: export-test-2","timestamp":"2025-09-27T14:47:38.239Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458239:0.8849686709398314","timestamp":"2025-09-27T14:47:38.239Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984458239:0.8849686709398314","timestamp":"2025-09-27T14:47:38.239Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:47:38.239Z"}
+{"level":"info","message":"Stored memory: continuity-1","timestamp":"2025-09-27T14:47:38.240Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458240:0.3351899110066745","timestamp":"2025-09-27T14:47:38.240Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984458240:0.3351899110066745","timestamp":"2025-09-27T14:47:38.240Z"}
+{"level":"info","message":"Stored memory: continuity-2","timestamp":"2025-09-27T14:47:38.240Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458240:0.08807336411171063","timestamp":"2025-09-27T14:47:38.240Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984458240:0.08807336411171063","timestamp":"2025-09-27T14:47:38.240Z"}
+{"level":"info","message":"Stored memory: continuity-3","timestamp":"2025-09-27T14:47:38.240Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984458241:0.06626245132433795","timestamp":"2025-09-27T14:47:38.241Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-3","message":"Memory processed through holographic identity","patternId":"pattern:1758984458241:0.06626245132433795","timestamp":"2025-09-27T14:47:38.241Z"}
+{"level":"info","message":"Stored memory: core-trait-1","timestamp":"2025-09-27T14:49:30.861Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570863:0.8390310206719853","timestamp":"2025-09-27T14:49:30.864Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"core-trait-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984570863:0.8390310206719853","timestamp":"2025-09-27T14:49:30.864Z"}
+{"level":"info","message":"Stored memory: core-trait-2","timestamp":"2025-09-27T14:49:30.865Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570865:0.9825338343797128","timestamp":"2025-09-27T14:49:30.865Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"core-trait-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984570865:0.9825338343797128","timestamp":"2025-09-27T14:49:30.865Z"}
+{"level":"info","message":"Stored memory: core-trait-3","timestamp":"2025-09-27T14:49:30.866Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570866:0.8216754783946472","timestamp":"2025-09-27T14:49:30.866Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"core-trait-3","message":"Memory processed through holographic identity","patternId":"pattern:1758984570866:0.8216754783946472","timestamp":"2025-09-27T14:49:30.866Z"}
+{"level":"info","message":"Stored memory: learning-1","timestamp":"2025-09-27T14:49:30.867Z"}
+{"level":"info","meshworkSize":4,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570867:0.5470534091694519","timestamp":"2025-09-27T14:49:30.867Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"learning-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984570867:0.5470534091694519","timestamp":"2025-09-27T14:49:30.868Z"}
+{"level":"info","message":"Stored memory: teaching-1","timestamp":"2025-09-27T14:49:30.868Z"}
+{"level":"info","meshworkSize":5,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570868:0.7162938627710258","timestamp":"2025-09-27T14:49:30.868Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"teaching-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984570868:0.7162938627710258","timestamp":"2025-09-27T14:49:30.868Z"}
+{"level":"info","message":"Stored memory: building-1","timestamp":"2025-09-27T14:49:30.869Z"}
+{"level":"info","meshworkSize":6,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570869:0.8527732050834376","timestamp":"2025-09-27T14:49:30.869Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"building-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984570869:0.8527732050834376","timestamp":"2025-09-27T14:49:30.869Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:49:30.870Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.547552898926547,"timestamp":"2025-09-27T14:49:30.870Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.45515978706019383,"timestamp":"2025-09-27T14:49:30.871Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.43261251458541605,"timestamp":"2025-09-27T14:49:30.871Z"}
+{"level":"info","message":"Stored memory: challenge-1","timestamp":"2025-09-27T14:49:30.871Z"}
+{"level":"info","meshworkSize":7,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570871:0.26445404786628","timestamp":"2025-09-27T14:49:30.872Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"challenge-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984570871:0.26445404786628","timestamp":"2025-09-27T14:49:30.872Z"}
+{"level":"info","message":"Stored memory: anomaly-test","timestamp":"2025-09-27T14:49:30.872Z"}
+{"level":"info","meshworkSize":8,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984570872:0.6949338879971008","timestamp":"2025-09-27T14:49:30.872Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"anomaly-test","message":"Memory processed through holographic identity","patternId":"pattern:1758984570872:0.6949338879971008","timestamp":"2025-09-27T14:49:30.872Z"}
+{"anomalyCount":8,"level":"warn","message":"Identity anomalies detected","severities":[0.75,0.75,0.5833333333333334,0.5833333333333334,0.6666666666666667,0.5833333333333334,0.5833333333333334,0.6666666666666667],"timestamp":"2025-09-27T14:49:30.873Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615101:0.08415353710561346","timestamp":"2025-09-27T14:50:15.101Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615109:0.8810502887443525","timestamp":"2025-09-27T14:50:15.109Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615109:0.8867961942424496","timestamp":"2025-09-27T14:50:15.109Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615110:0.30464610041933127","timestamp":"2025-09-27T14:50:15.110Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615110:0.03430525697684961","timestamp":"2025-09-27T14:50:15.110Z"}
+{"level":"info","message":"Stored memory: holographic-test-1","timestamp":"2025-09-27T14:50:15.127Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615129:0.3841553596991092","timestamp":"2025-09-27T14:50:15.130Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"holographic-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615129:0.3841553596991092","timestamp":"2025-09-27T14:50:15.130Z"}
+{"level":"info","message":"Stored memory: holo-1","timestamp":"2025-09-27T14:50:15.132Z"}
+{"level":"info","message":"Stored memory: holo-2","timestamp":"2025-09-27T14:50:15.133Z"}
+{"level":"info","message":"Stored memory: holo-3","timestamp":"2025-09-27T14:50:15.133Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:50:15.133Z"}
+{"level":"info","message":"Stored memory: intuition-base-1","timestamp":"2025-09-27T14:50:15.134Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615135:0.5378581439854375","timestamp":"2025-09-27T14:50:15.135Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615135:0.5378581439854375","timestamp":"2025-09-27T14:50:15.135Z"}
+{"level":"info","message":"Stored memory: intuition-base-2","timestamp":"2025-09-27T14:50:15.136Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615136:0.16205522782110138","timestamp":"2025-09-27T14:50:15.136Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"intuition-base-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615136:0.16205522782110138","timestamp":"2025-09-27T14:50:15.136Z"}
+{"confidence":0,"insightCount":0,"level":"info","message":"Gestalt intuition generated","resonance":0.5814779190070166,"timestamp":"2025-09-27T14:50:15.137Z"}
+{"level":"info","message":"Stored memory: baseline-1","timestamp":"2025-09-27T14:50:15.137Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615138:0.4071051867134803","timestamp":"2025-09-27T14:50:15.138Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615138:0.4071051867134803","timestamp":"2025-09-27T14:50:15.138Z"}
+{"level":"info","message":"Stored memory: baseline-2","timestamp":"2025-09-27T14:50:15.138Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615138:0.4084165562943667","timestamp":"2025-09-27T14:50:15.138Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"baseline-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615138:0.4084165562943667","timestamp":"2025-09-27T14:50:15.139Z"}
+{"level":"info","message":"Stored memory: anomalous-1","timestamp":"2025-09-27T14:50:15.139Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615139:0.35447321965652123","timestamp":"2025-09-27T14:50:15.139Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"anomalous-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615139:0.35447321965652123","timestamp":"2025-09-27T14:50:15.139Z"}
+{"anomalyCount":1,"level":"warn","message":"Identity anomalies detected","severities":[0.33333333333333337],"timestamp":"2025-09-27T14:50:15.140Z"}
+{"level":"info","message":"Stored memory: snapshot-test-1","timestamp":"2025-09-27T14:50:15.141Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615141:0.9182883846984509","timestamp":"2025-09-27T14:50:15.141Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"snapshot-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615141:0.9182883846984509","timestamp":"2025-09-27T14:50:15.141Z"}
+{"level":"info","message":"Stored memory: export-test-1","timestamp":"2025-09-27T14:50:15.142Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615142:0.7242127240017462","timestamp":"2025-09-27T14:50:15.142Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615142:0.7242127240017462","timestamp":"2025-09-27T14:50:15.142Z"}
+{"level":"info","message":"Stored memory: export-test-2","timestamp":"2025-09-27T14:50:15.142Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615143:0.9554998475497118","timestamp":"2025-09-27T14:50:15.143Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"export-test-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615143:0.9554998475497118","timestamp":"2025-09-27T14:50:15.143Z"}
+{"coherence":0,"echoCount":0,"level":"info","message":"Hologram reconstructed","patternCount":0,"timestamp":"2025-09-27T14:50:15.144Z"}
+{"level":"info","message":"Stored memory: continuity-1","timestamp":"2025-09-27T14:50:15.144Z"}
+{"level":"info","meshworkSize":1,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615144:0.017457282257975493","timestamp":"2025-09-27T14:50:15.144Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-1","message":"Memory processed through holographic identity","patternId":"pattern:1758984615144:0.017457282257975493","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","message":"Stored memory: continuity-2","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","meshworkSize":2,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615145:0.20665290421170757","timestamp":"2025-09-27T14:50:15.145Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-2","message":"Memory processed through holographic identity","patternId":"pattern:1758984615145:0.20665290421170757","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","message":"Stored memory: continuity-3","timestamp":"2025-09-27T14:50:15.145Z"}
+{"level":"info","meshworkSize":3,"message":"Experience ingested into holographic identity","patternId":"pattern:1758984615145:0.63449498388863","timestamp":"2025-09-27T14:50:15.145Z"}
+{"continuityPreserved":true,"level":"info","memoryKey":"continuity-3","message":"Memory processed through holographic identity","patternId":"pattern:1758984615145:0.63449498388863","timestamp":"2025-09-27T14:50:15.146Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.423Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.427Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.427Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.429Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.429Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.430Z"}
+{"id":"context1","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.432Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.432Z"}
+{"id":"context2","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.432Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.432Z"}
+{"id":"test","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.433Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.435Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.436Z"}
+{"level":"info","message":"Stored memory: key3","timestamp":"2025-09-27T14:50:15.436Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.478Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-27T14:50:15.482Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.485Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.485Z"}
+{"id":"test-context","level":"info","message":"Started new context:","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.496Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.497Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.498Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.498Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.499Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.544Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-27T14:50:15.549Z"}
+{"level":"info","message":"Stored memory: test1","timestamp":"2025-09-27T14:50:15.549Z"}
+{"level":"info","message":"Recalled memory: test1","timestamp":"2025-09-27T14:50:15.551Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.552Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.553Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.553Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.553Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.554Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.554Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.555Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.555Z"}
+{"level":"info","message":"Linked memories: key1 -> key2","timestamp":"2025-09-27T14:50:15.555Z"}
+{"level":"info","message":"Found 1 related memories for: key1","timestamp":"2025-09-27T14:50:15.556Z"}
+{"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.558Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.558Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.558Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.559Z"}
+{"id":"test-context","level":"info","message":"Started new context:","startTime":1758984615560,"timestamp":"2025-09-27T14:50:15.560Z"}
+{"level":"info","message":"Started context: test-context","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.561Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.562Z"}
+{"duration":2,"id":"test-context","level":"info","memories":{},"memoryCount":2,"message":"Ended context:","startTime":1758984615560,"summary":[],"timestamp":"2025-09-27T14:50:15.562Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.563Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.564Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.564Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.564Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.565Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.565Z"}
+{"level":"info","message":"Memory system initialized","timestamp":"2025-09-27T14:50:15.565Z"}
+{"level":"info","message":"Linked memories: nonexistent1 -> nonexistent2","timestamp":"2025-09-27T14:50:15.565Z"}
+{"clusters":0,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-27T14:50:15.573Z"}
+{"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-27T14:50:15.573Z"}
+{"level":"info","message":"Memory system shut down","timestamp":"2025-09-27T14:50:15.573Z"}
+{"level":"info","message":"Pruned old echo: echo:1758984615810","timestamp":"2025-09-27T14:50:15.810Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.857Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.862Z"}
+{"level":"info","message":"Stored memory: key2","timestamp":"2025-09-27T14:50:15.863Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.873Z"}
+{"level":"info","message":"Consolidated memory to long-term: key1","timestamp":"2025-09-27T14:50:15.873Z"}
+{"level":"info","message":"Stored memory: key1","timestamp":"2025-09-27T14:50:15.874Z"}
 {"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:44:15.523Z"}
 {"level":"info","message":"Configuration validated successfully","timestamp":"2025-09-12T08:44:15.653Z"}
 {"level":"info","message":"Starting preprocessing of file: input.csv","timestamp":"2025-09-12T08:44:15.697Z"}
