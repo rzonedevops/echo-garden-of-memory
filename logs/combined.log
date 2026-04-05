@@ -1017,3 +1017,17 @@
 {"clusters":1,"level":"info","message":"Memory maintenance completed","timestamp":"2025-09-12T08:53:11.790Z"}
 {"level":"info","message":"Completed memory system maintenance","timestamp":"2025-09-12T08:53:11.790Z"}
 {"level":"info","message":"Memory system shut down","timestamp":"2025-09-12T08:53:11.790Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2026-04-05T19:01:38.535Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2026-04-05T19:01:38.544Z"}
+{"level":"info","message":"Splitting dataset into train/validation sets","timestamp":"2026-04-05T19:01:38.545Z"}
+{"level":"info","message":"Split dataset: 80 train, 20 validation examples","timestamp":"2026-04-05T19:01:38.545Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2026-04-05T19:01:38.553Z"}
+{"level":"info","message":"Splitting dataset into train/validation sets","timestamp":"2026-04-05T19:01:38.553Z"}
+{"level":"info","message":"Split dataset: 0 train, 0 validation examples","timestamp":"2026-04-05T19:01:38.553Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2026-04-05T19:01:38.554Z"}
+{"level":"info","message":"Splitting dataset into train/validation sets","timestamp":"2026-04-05T19:01:38.554Z"}
+{"level":"info","message":"Split dataset: 70 train, 30 validation examples","timestamp":"2026-04-05T19:01:38.554Z"}
+{"level":"info","message":"Configuration validated successfully","timestamp":"2026-04-05T19:01:38.571Z"}
+{"level":"info","message":"Starting preprocessing of file: input.csv","timestamp":"2026-04-05T19:01:38.595Z"}
+{"level":"info","message":"Successfully preprocessed input.csv","timestamp":"2026-04-05T19:01:38.597Z"}
+{"level":"info","message":"Read 2 narrative file(s)","timestamp":"2026-04-05T19:01:38.564Z"}

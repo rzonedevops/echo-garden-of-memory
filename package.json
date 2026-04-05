@@ -4,6 +4,7 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
+    "introspect": "node src/data/introspect.js",
     "prepare-data": "node src/data/prepare.js",
     "train": "node src/training/train.js",
     "evaluate": "node src/evaluation/evaluate.js",
